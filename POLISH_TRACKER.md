@@ -48,3 +48,9 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - Brown adventure backpack is removable/optional.
 - Use approved image-generation artwork, not the existing simplified SVG as the final asset.
 - Do not mark [L] until a production image asset is deployed and user sees it on iPhone Safari.
+
+## A01 Approval Record
+- Approved by user: October 13, 2026.
+- Approved artwork: Boffy production master character sheet (fuzzy royal-blue plush, cream face, long arms, expressive face, optional adventure backpack).
+- Status: Visual master APPROVED. Do not mark LIVE until the actual approved image assets are integrated and user confirms Safari rendering.
+- A02 remains blocked until A01 live verification.
