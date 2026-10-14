@@ -60,3 +60,10 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - `index.html` cache version updated to `a01-20261013`.
 - Important: currently a compact web preview asset, not a full-resolution transparent production sprite; higher-resolution transparency and animation pose exports remain for a later polish pass.
 - User must verify the live iPhone Safari result before A02.
+
+## A01 — OPEN BLOCKER (confirmed 2026-10-13)
+- [ ] **NOT LIVE:** The approved final furry Boffy rendering is NOT being loaded by the current game. The attempted embedded JPEG/SVG asset displayed as a broken question-mark image on Safari, and the current game has been reverted to a placeholder.
+- [ ] Export the exact approved A01 Boffy master artwork to a real browser-compatible transparent PNG/WebP file (no JPEG wrapped inside SVG; no low-resolution placeholder).
+- [ ] Publish the actual image binary in the GitHub Pages repository and update every Boffy image reference (Home, Friends, feedback, Goal Meter, other screens).
+- [ ] Verify image loading and quality in iPhone and iPad Safari; request screenshot and user confirmation.
+- [ ] Only then mark A01 Live/Verified and unblock A02. Preserve user-approved appearance; do not replace with a newly invented design.
