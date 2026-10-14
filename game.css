@@ -44,3 +44,10 @@ button.blue{box-shadow:0 4px 0 #034174}
 footer{padding-bottom:85px}
 @media(min-width:760px){.friend-grid{grid-template-columns:repeat(5,1fr)}.quest-card{min-height:130px}.quest-card img{height:110px;width:110px}}
 @media(prefers-reduced-motion:reduce){.reaction-mascot{animation:none!important}}
+
+.hero{background:linear-gradient(#052b4b15,#0829468c),url("assets/forest.svg") center/cover no-repeat}
+.hero:before,.hero:after{display:none}
+body{background:linear-gradient(#071b35d9,#092e4bcf),url("assets/forest.svg") center/cover fixed no-repeat}
+.quest-card img{filter:drop-shadow(0 7px 4px #0009)}
+.goal-board{background:linear-gradient(#07345cb0,#07182feb),url("assets/forest.svg") center/cover no-repeat}
+.friend img{filter:drop-shadow(0 6px 7px #0008)}
