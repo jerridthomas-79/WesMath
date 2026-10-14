@@ -54,3 +54,9 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - Approved artwork: Boffy production master character sheet (fuzzy royal-blue plush, cream face, long arms, expressive face, optional adventure backpack).
 - Status: Visual master APPROVED. Do not mark LIVE until the actual approved image assets are integrated and user confirms Safari rendering.
 - A02 remains blocked until A01 live verification.
+
+## A01 Live Implementation — 2026-10-13
+- [L pending user verification] Approved furry Boffy image embedded in `assets/boffy-a01.svg` and referenced from `game.js` for all Boffy images.
+- `index.html` cache version updated to `a01-20261013`.
+- Important: currently a compact web preview asset, not a full-resolution transparent production sprite; higher-resolution transparency and animation pose exports remain for a later polish pass.
+- User must verify the live iPhone Safari result before A02.
