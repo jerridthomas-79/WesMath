@@ -3,7 +3,7 @@
 Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and verified on iPhone
 
 ## Characters & Animation
-- [ ] A01 — Boffy master character: premium fuzzy blue plush matching original pose sheet
+- [A] A01 — Boffy master character: premium fuzzy blue plush matching original pose sheet — approved by user Oct 13, 2026; implementation and live verification pending
 - [ ] A02 — Friend masters: Rocky, Chilly, Sunny, Zippy, distinct shapes and accessories
 - [ ] A03 — Boffy expressions: happy, thinking, puzzled, cheering, sleepy, encouraging
 - [ ] A04 — Boffy idle: breathing, blink, head tilt, wave
@@ -42,3 +42,9 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 
 ## Priority
 A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests → A10/A11 questions and reactions → A12/A13 goal/rewards → A14/A15 admin/UI → A16/A17/A18 QA.
+
+## A01 approved art direction
+- Master character board approved: fuzzy royal-blue plush, cream face, expressive eyes, long arms and little claws.
+- Brown adventure backpack is removable/optional.
+- Use approved image-generation artwork, not the existing simplified SVG as the final asset.
+- Do not mark [L] until a production image asset is deployed and user sees it on iPhone Safari.
