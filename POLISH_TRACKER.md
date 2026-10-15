@@ -101,3 +101,10 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [ ] Produce FOUR separate, independently usable full-body images (Rocky, Chilly, Sunny, Zippy), not cropped from overlapping group composition; inspect face, paws, feet, fur and transparency.
 - [ ] Update in-game Friends, quest and reward assets to new character images; preserve approved A01 Boffy.
 - [ ] Publish and verify on iPhone Safari before marking A02 live. Do not delete fallback SVGs until verified.
+
+## A02 integration prepared — 2026-10-15
+- [x] Four separate transparent PNG files exported, checked on game-navy background, and packaged: `rocky-a02.png`, `chilly-a02.png`, `sunny-a02.png`, `zippy-a02.png`.
+- [x] Updated `game.js` to load each A02 PNG in Friends, quest cards and feedback; each old SVG is its own fallback while PNGs are not uploaded. Boffy A01 left untouched.
+- [x] Cache-busted `index.html` script to `a02-friends-20261015a` and PNG image URLs to `20261015a`.
+- [ ] USER ACTION: Download `A02_Boffy_Friends_Upload.zip`, extract and upload four PNGs into GitHub repository `assets/` folder (NOT the zip itself); commit. File names must match exactly.
+- [ ] Verify on iPhone Safari and inspect all four; approve A02 only after live check.
