@@ -64,3 +64,10 @@ header,main,footer,.bottom-nav{position:relative;z-index:1}
 .friend{background:linear-gradient(180deg,#1b6092e6,#082744ed),url("assets/forest.svg") center/cover no-repeat;box-shadow:inset 0 1px #d6f4ff35,0 4px 12px #0005}
 .goal-board{background:linear-gradient(180deg,#0b3e6b9c,#061d39ed),url("assets/forest.svg") center/cover no-repeat}
 @media(prefers-reduced-motion:reduce){body{background-attachment:scroll}}
+
+/* A07 final artwork hook: illustrated panorama appears automatically after forest-a07.jpg is uploaded. */
+body{background-image:linear-gradient(180deg,#051a31ad,#062c48a3 52%,#04182bd9),url("assets/forest-a07.jpg?v=a07-final-1"),url("assets/forest.svg");background-position:center,center center,center;background-size:cover,cover,cover;background-repeat:no-repeat;background-attachment:fixed}
+.hero{background-image:linear-gradient(180deg,#092e4d20,#0628425c 65%,#052a3bba),url("assets/forest-a07.jpg?v=a07-final-1"),url("assets/forest.svg");background-size:cover,cover,cover;background-position:center,center,center}
+.friend{background-image:linear-gradient(180deg,#0b4c76c7,#062744e8),url("assets/forest-a07.jpg?v=a07-final-1"),url("assets/forest.svg");background-size:cover,cover,cover;background-position:center,center,center}
+.goal-board{background-image:linear-gradient(180deg,#07345b8f,#041b34dd),url("assets/forest-a07.jpg?v=a07-final-1"),url("assets/forest.svg");background-size:cover,cover,cover;background-position:center,center,center}
+@media(max-width:700px){body{background-attachment:scroll}.hero{background-position:center,center,center}}
