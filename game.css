@@ -135,3 +135,18 @@ body{background-image:linear-gradient(180deg,#051a31ad,#062c48a3 52%,#04182bd9),
 @keyframes a04-breathe{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-5px) scale(1.025)}}
 @keyframes a04-welcome{0%,72%,100%{filter:drop-shadow(0 10px 8px #002342a0)}76%,84%{filter:drop-shadow(0 10px 8px #002342a0) brightness(1.07)}}
 @media(prefers-reduced-motion:reduce){.hero .mascot,.goal-board>.mascot{animation:none!important;will-change:auto}}
+
+/* A05 — clear, joyful answer reactions; no changes to scoring or Dad approval */
+.a05-success{border-color:#a8ef9d;background-image:radial-gradient(circle at 50% 25%,#49c86e42,transparent 52%),linear-gradient(180deg,#0d5b60d9,#09223ae8),url("assets/forest-a07.jpg")}
+.a05-success:before{content:"✦  ★  ✦  ★  ✦";display:block;color:#ffea73;font-size:clamp(21px,6vw,33px);letter-spacing:clamp(4px,2vw,13px);text-shadow:0 0 16px #ffd748;animation:a05-stars 1.3s ease-in-out infinite alternate}
+.a05-success .reaction-mascot{animation:a05-cheer .8s cubic-bezier(.22,.75,.4,1) both}
+.a05-success .wood{background:linear-gradient(#2aaf58,#0e7b49 60%,#075238);border-color:#b7f7ad}
+.a05-retry{border-color:#ffd38a;background-image:linear-gradient(180deg,#665020c9,#18334ce8),url("assets/forest-a07.jpg")}
+.a05-retry .reaction-mascot{animation:a05-encourage 2.5s ease-in-out infinite}
+.a05-retry .wood{background:linear-gradient(#d39132,#a85e24 65%,#784119);border-color:#ffdc97}
+.a05-hint-pop{animation:a05-hint .32s ease-out both}
+@keyframes a05-stars{from{opacity:.6;transform:scale(.96)}to{opacity:1;transform:scale(1.05)}}
+@keyframes a05-cheer{0%{opacity:.6;transform:translateY(20px) scale(.87) rotate(-7deg)}60%{opacity:1;transform:translateY(-14px) scale(1.06) rotate(5deg)}100%{transform:translateY(0) scale(1) rotate(0)}}
+@keyframes a05-encourage{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(3deg) translateY(-5px)}}
+@keyframes a05-hint{from{opacity:.35;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.a05-success:before,.a05-success .reaction-mascot,.a05-retry .reaction-mascot,.a05-hint-pop{animation:none!important}}
