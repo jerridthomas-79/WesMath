@@ -150,3 +150,24 @@ body{background-image:linear-gradient(180deg,#051a31ad,#062c48a3 52%,#04182bd9),
 @keyframes a05-encourage{0%,100%{transform:rotate(-3deg) translateY(0)}50%{transform:rotate(3deg) translateY(-5px)}}
 @keyframes a05-hint{from{opacity:.35;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
 @media(prefers-reduced-motion:reduce){.a05-success:before,.a05-success .reaction-mascot,.a05-retry .reaction-mascot,.a05-hint-pop{animation:none!important}}
+
+/* A06 — distinct plush-sloth friend personalities, preserving approved images */
+.a06-friend{position:relative;overflow:hidden;isolation:isolate;transition:border-color .2s,box-shadow .2s}
+.a06-friend img{display:block;object-fit:contain;transform-origin:50% 82%;will-change:transform}
+.a06-friend:after{position:absolute;right:9px;top:9px;font-size:17px;opacity:.85;pointer-events:none;filter:drop-shadow(0 2px 3px #00152c)}
+.a06-boffy img{animation:a06-breathe 3.8s ease-in-out infinite}
+.a06-boffy:after{content:"✦";color:#b9f5ff}
+.a06-rocky img{animation:a06-rocky 3.6s ease-in-out infinite}
+.a06-rocky:after{content:"⚒️"}
+.a06-chilly img{animation:a06-chilly 4.2s ease-in-out infinite}
+.a06-chilly:after{content:"✧";color:#ffd6f5}
+.a06-sunny img{animation:a06-sunny 3.2s ease-in-out infinite}
+.a06-sunny:after{content:"☀️"}
+.a06-zippy img{animation:a06-zippy 2.5s ease-in-out infinite}
+.a06-zippy:after{content:"⚡"}
+@keyframes a06-breathe{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-4px) scale(1.025)}}
+@keyframes a06-rocky{0%,100%{transform:translateY(0) rotate(0)}38%{transform:translateY(-2px) rotate(-3deg)}48%{transform:translateY(0) rotate(2deg)}60%{transform:translateY(0) rotate(0)}}
+@keyframes a06-chilly{0%,100%{transform:rotate(0) translateY(0)}38%{transform:rotate(-5deg) translateY(-2px)}56%{transform:rotate(3deg) translateY(-4px)}}
+@keyframes a06-sunny{0%,100%{transform:translateY(0) scale(1)}40%{transform:translateY(-8px) scale(1.04)}52%{transform:translateY(-2px) scale(1.01)}}
+@keyframes a06-zippy{0%,100%{transform:translateX(0) rotate(0)}25%{transform:translateX(5px) rotate(3deg)}50%{transform:translateX(-5px) rotate(-3deg)}75%{transform:translateX(3px) rotate(2deg)}}
+@media(prefers-reduced-motion:reduce){.a06-friend img{animation:none!important;will-change:auto}}
