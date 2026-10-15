@@ -80,3 +80,10 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [ ] Export and visually inspect actual transparent PNG, especially complete face, fingers, feet and background transparency.
 - [ ] Deploy this exact approved image to all live Boffy placements; do not use the older damaged crop.
 - [ ] Verify on iPhone Safari and obtain user confirmation before marking A01 live or proceeding to A02.
+
+## A01 verified export — 2026-10-15
+- [x] Corrected user-approved 1024×1536 cartoon-plush Boffy to true RGBA transparent PNG with intact cream face, raised hand, both feet, and backpack.
+- [x] Inspected composite on navy game-like background; complete silhouette, no face cutout or checkerboard baked into image.
+- [x] Final local file `boffy-a01-approved-transparent.png` ready for one-time upload to GitHub at `assets/boffy-a01.png`.
+- [ ] Actual binary PNG upload still required; repository game.js already targets `assets/boffy-a01.png`.
+- [ ] Verify Safari live image and request final signoff.
