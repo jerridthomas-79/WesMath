@@ -94,3 +94,10 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [x] Checked complete cream face, eyes, smile, backpack, arms, claws and feet on game-blue background.
 - [ ] USER ACTION: Upload `boffy-a01.png` to repo path `assets/boffy-a01.png` (replace existing file if present). Current game code already references this filename.
 - [ ] Check iPhone Safari live render; mark A01 live only after confirmation.
+
+## A02 — CHARACTER LINEUP APPROVED (2026-10-15)
+- [x] User approved five plush sloths: Boffy blue hero, Rocky charcoal gray builder, Chilly pink girl with glasses and flower (replaces old purple Chilly placeholder), Sunny golden yellow cheerleader, Zippy purple speedster.
+- [x] Style locked: saturated, soft fluffy 3D cartoon-plush, cream-colored faces, hiking/adventure accessories, complete anatomy, distinct personalities.
+- [ ] Produce FOUR separate, independently usable full-body images (Rocky, Chilly, Sunny, Zippy), not cropped from overlapping group composition; inspect face, paws, feet, fur and transparency.
+- [ ] Update in-game Friends, quest and reward assets to new character images; preserve approved A01 Boffy.
+- [ ] Publish and verify on iPhone Safari before marking A02 live. Do not delete fallback SVGs until verified.
