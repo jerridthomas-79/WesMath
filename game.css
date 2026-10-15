@@ -80,3 +80,24 @@ body{background-image:linear-gradient(180deg,#051a31ad,#062c48a3 52%,#04182bd9),
 .friend p,.friend small{color:#f2f8ff;text-shadow:0 2px 4px #001b33}
 .goal-board .statline{background:#031c37a6;border:1px solid #91ceef7d;border-radius:18px;padding:13px 6px}
 .goal-board .big-number{text-shadow:0 3px 8px #001a34}
+
+/* A03 production quest-screen polish — no game logic changes */
+.a03-question{background:linear-gradient(180deg,#0b3c65ed,#08294fe8 65%,#051b36f5),url("assets/forest-a07.jpg?v=a07-final-1") center/cover;border-color:#87d6ff}
+.a03-quest-header{align-items:center;flex-wrap:wrap;text-transform:uppercase;letter-spacing:.3px;box-shadow:0 5px 0 #512a1a,0 10px 14px #00182b88}
+.a03-question-paper{position:relative;background:linear-gradient(145deg,#fffef5,#ffe7b7);border:3px solid #f7d493;box-shadow:inset 0 0 0 2px #fff7e4,0 7px 0 #84522c,0 13px 20px #0007;color:#172c3b;font-weight:800;font-size:clamp(20px,5vw,27px);line-height:1.55;padding:24px 18px}
+.a03-question-label{display:block;color:#7d441d;font:900 13px Nunito,sans-serif;letter-spacing:1.5px;margin-bottom:10px}
+.a03-question .mascot{width:clamp(105px,29vw,160px);height:clamp(125px,31vw,185px);object-fit:contain;filter:drop-shadow(0 9px 8px #001a32a8);flex-shrink:0}
+.a03-question .paper-note{font-size:clamp(14px,3.8vw,18px);line-height:1.45;box-shadow:0 4px 0 #865c32}
+.a03-answer-panel{border:3px solid #ffe5a5!important;box-shadow:0 6px 0 #82542c,0 12px 22px #0008!important;border-radius:20px}
+.a03-answer-panel label{font-weight:900;color:#12365b}
+.a03-answer-panel input{font-size:20px;font-weight:800;background:#fff;border:3px solid #a7c7e3;border-radius:14px;min-height:55px}
+.a03-answer-panel .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.a03-answer-panel .row button{min-height:56px;border-radius:14px;font-weight:900;box-shadow:0 5px 0 #062b46,0 8px 12px #0005}
+.a03-feedback{background:linear-gradient(180deg,#0c4d79dc,#082d53e8 55%,#061a35f7),url("assets/forest-a07.jpg?v=a07-final-1") center/cover;border-color:#9ce0ff}
+.a03-feedback h2.wood{font-size:clamp(26px,8vw,44px);border-color:#ffcd70}
+.a03-feedback .reaction-mascot{filter:drop-shadow(0 10px 8px #0007)}
+.a03-feedback .parchment{font-size:clamp(17px,4.5vw,22px)!important}
+.a03-feedback .row{flex-wrap:wrap}
+.a03-feedback .row button{min-height:52px}
+@media(max-width:380px){.a03-question .mascot{width:95px;height:125px}.a03-answer-panel .row button{padding:10px 5px;font-size:14px}}
+@media(prefers-reduced-motion:reduce){.a03-feedback .reaction-mascot{animation:none}}
