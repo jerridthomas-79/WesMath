@@ -67,3 +67,10 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [ ] Publish the actual image binary in the GitHub Pages repository and update every Boffy image reference (Home, Friends, feedback, Goal Meter, other screens).
 - [ ] Verify image loading and quality in iPhone and iPad Safari; request screenshot and user confirmation.
 - [ ] Only then mark A01 Live/Verified and unblock A02. Preserve user-approved appearance; do not replace with a newly invented design.
+
+## A01 work on 2026-10-15
+- [x] Extracted the approved furry master as an actual RGBA PNG file `boffy-a01.png` (580×1040 presentation upscale from 145×260 approved crop; no new detail fabricated).
+- [x] Updated `game.js` to load `assets/boffy-a01.png` on all Boffy appearances with `assets/boffy.svg` fallback to prevent broken-image blocks.
+- [x] Cache-busted the script in `index.html`.
+- [ ] **BLOCKED ON BINARY UPLOAD**: GitHub connector available here writes UTF-8 text only; the actual PNG binary is prepared but has not been uploaded to repository. Upload `boffy-a01.png` at exact path `assets/boffy-a01.png` in GitHub to activate it.
+- [ ] User verify actual rendering in Safari; do not mark A01 complete or start A02 yet.
