@@ -12,7 +12,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 
 ## Environment & UI
 - [P] A07 — Detailed layered forest adventure scenery
-- [ ] A08 — Home composition and hero artwork
+- [P] A08 — Home composition polish deployed; original approved Boffy and forest artwork preserved
 - [ ] A09 — Four illustrated quest cards and progress
 - [ ] A10 — Question parchment, character bubble, HELP overlay
 - [ ] A11 — Correct-answer celebration and progress
@@ -140,3 +140,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] A05 success, retry and HELP effects approved explicitly by user.
 - [P] A06 friend card animations: Boffy breathe, Rocky builder rock, Chilly thinker tilt, Sunny bounce, Zippy wiggle. Published in game.css and game.js, cache-busted index.html.
 - [ ] User verify Friends and Rewards on iPhone. Whole-sprite motion only; no new facial/arm frames.
+
+## A06 signoff and A08 Home deployment — 2026-10-15
+- [L] A06 five distinct friend idle motions explicitly approved by user.
+- [P] A08 Home: richer hero hierarchy, improved title, paper reminder, large CTA, and real Dad-approved counter. Preserves existing assets and localStorage.
+- [ ] A08 user iPhone Safari signoff required before next item A09.
