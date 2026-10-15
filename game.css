@@ -71,3 +71,12 @@ body{background-image:linear-gradient(180deg,#051a31ad,#062c48a3 52%,#04182bd9),
 .friend{background-image:linear-gradient(180deg,#0b4c76c7,#062744e8),url("assets/forest-a07.jpg?v=a07-final-1"),url("assets/forest.svg");background-size:cover,cover,cover;background-position:center,center,center}
 .goal-board{background-image:linear-gradient(180deg,#07345b8f,#041b34dd),url("assets/forest-a07.jpg?v=a07-final-1"),url("assets/forest.svg");background-size:cover,cover,cover;background-position:center,center,center}
 @media(max-width:700px){body{background-attachment:scroll}.hero{background-position:center,center,center}}
+
+/* A07 readability signoff — stronger quest headings and legible forest cards */
+.quest-copy strong{color:#fff9df!important;-webkit-text-stroke:.35px #163454;text-shadow:0 2px 1px #071a31,2px 3px 0 #082745,0 0 7px #001c36}
+.quest-copy small{color:#fff!important;text-shadow:0 1px 3px #09203b}
+.friend{background-image:linear-gradient(180deg,#0b4c76b8 0%,#092c4a9c 45%,#061b35f0 83%,#04162bf7 100%),url("assets/forest-a07.jpg?v=a07-final-1"),url("assets/forest.svg")}
+.friend h3,.friend strong{color:#ffdc65;text-shadow:0 2px 3px #021a32}
+.friend p,.friend small{color:#f2f8ff;text-shadow:0 2px 4px #001b33}
+.goal-board .statline{background:#031c37a6;border:1px solid #91ceef7d;border-radius:18px;padding:13px 6px}
+.goal-board .big-number{text-shadow:0 3px 8px #001a34}
