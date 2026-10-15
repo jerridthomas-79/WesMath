@@ -119,3 +119,9 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [x] Deployed CSS forest atmosphere pass (lighting, panel depth, forest imagery on Home/Friends/Goal) to `game.css` and cache-busted stylesheet in `index.html`.
 - [ ] A07 final high-detail illustrated forest background asset still needs production extraction and deployment; CSS pass is not a replacement for the approved illustration.
 - [ ] Verify live iPhone Safari appearance; do not mark A07 final or delete original `forest.svg` until confirmed.
+
+## A03 quest screen polish — 2026-10-15
+- [x] Published production parchment question card, animated Boffy coach, high-contrast answer field, two-button HELP/SUBMIT layout, improved hints, and feedback screen treatment.
+- [x] Updated `game.css`, `game.js` and cache-busted both in `index.html`.
+- [ ] User iPhone Safari approval: check question, HELP, correct and retry screens before closing A03.
+- [ ] Continue to next approved polish item after A03 signoff.
