@@ -6,7 +6,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [L] A01 — Boffy master character: premium fuzzy blue plush matching original pose sheet — approved by user Oct 13, 2026; implementation and live verification pending
 - [L] A02 — Friend masters: Rocky, Chilly, Sunny, Zippy, distinct shapes and accessories
 - [ ] A03 — Boffy expressions: happy, thinking, puzzled, cheering, sleepy, encouraging
-- [ ] A04 — Boffy idle: breathing, blink, head tilt, wave
+- [P] A04 — Boffy idle: breathing and subtle lighting live for approval; blink and articulated wave require additional animation frames
 - [ ] A05 — Answer reactions: correct, retry, HELP
 - [ ] A06 — Friends' signature animations
 
@@ -125,3 +125,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [x] Updated `game.css`, `game.js` and cache-busted both in `index.html`.
 - [ ] User iPhone Safari approval: check question, HELP, correct and retry screens before closing A03.
 - [ ] Continue to next approved polish item after A03 signoff.
+
+## A03 signoff and A04 motion preview — 2026-10-15
+- [L] A03 quest question, answer and feedback styling: user explicitly approved and requested continuation.
+- [P] A04 gentle breathing on Home and Goal; small light pulse. CSS only, preserves A01 artwork. Reduced-motion users see still image. This is NOT an articulated blink or arm wave; those require new approved sprite frames.
+- [ ] User verify A04 motion on iPhone before closing. Do not mark articulated poses complete.
