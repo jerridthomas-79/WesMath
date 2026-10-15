@@ -8,7 +8,7 @@ const img=(name,cls="mascot")=>'<img class="'+cls+'" src="assets/'+(name==="boff
 const count=()=>Object.values(entries).filter(e=>e.correct&&e.approved).length;
 const doneFor=c=>Object.values(entries).filter(e=>e.course===c&&e.correct).length;
 const progress=(v,max)=>'<div class="game-progress"><div style="width:'+Math.min(100,100*v/max)+'%"></div></div>';
-const friendCards=()=>chars.map(x=>'<div class="friend">'+img(x[0])+'<h3>'+x[1]+'</h3><p>'+x[2]+'</p></div>').join("");
+const friendCards=()=>chars.map(x=>'<div class="friend a06-friend a06-'+x[0]+'">'+img(x[0])+'<h3>'+x[1]+'</h3><p>'+x[2]+'</p></div>').join("");
 function navbar(){const items=[["welcome","🏠","Home"],["courses","📖","Quests"],["goals","🏆","Goal"],["rewards","🎁","Rewards"],["friends","🦥","Friends"]];document.getElementById("boffy-nav").innerHTML=items.map(x=>'<button class="'+(page===x[0]?'active':'')+'" onclick="page=\''+x[0]+'\';render()"><span>'+x[1]+'</span>'+x[2]+'</button>').join("")}
 window.rewards=function(){page="rewards";render()};
 window.render=function(){
