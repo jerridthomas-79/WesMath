@@ -3,8 +3,8 @@
 Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and verified on iPhone
 
 ## Characters & Animation
-- [A] A01 — Boffy master character: premium fuzzy blue plush matching original pose sheet — approved by user Oct 13, 2026; implementation and live verification pending
-- [ ] A02 — Friend masters: Rocky, Chilly, Sunny, Zippy, distinct shapes and accessories
+- [L] A01 — Boffy master character: premium fuzzy blue plush matching original pose sheet — approved by user Oct 13, 2026; implementation and live verification pending
+- [L] A02 — Friend masters: Rocky, Chilly, Sunny, Zippy, distinct shapes and accessories
 - [ ] A03 — Boffy expressions: happy, thinking, puzzled, cheering, sleepy, encouraging
 - [ ] A04 — Boffy idle: breathing, blink, head tilt, wave
 - [ ] A05 — Answer reactions: correct, retry, HELP
@@ -108,3 +108,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [x] Cache-busted `index.html` script to `a02-friends-20261015a` and PNG image URLs to `20261015a`.
 - [ ] USER ACTION: Download `A02_Boffy_Friends_Upload.zip`, extract and upload four PNGs into GitHub repository `assets/` folder (NOT the zip itself); commit. File names must match exactly.
 - [ ] Verify on iPhone Safari and inspect all four; approve A02 only after live check.
+
+## iPhone live signoff — 2026-10-15
+- [L] A01: User confirmed blue Boffy on live Safari Friends and Quests screens.
+- [L] A02: User provided live iPhone Safari screenshots of all four approved friend PNGs and four quest cards, stated 'We are good. Continue'. Four friend assets are now live and verified.
+- [P] Next priority A07: detailed layered forest environment; create visual preview before deploying, retaining existing course layout and navigation.
