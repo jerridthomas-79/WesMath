@@ -4,7 +4,7 @@ const chars=[["boffy","Boffy","The Hero"],["rocky","Rocky","The Builder"],["chil
 const questNames=["GEOMETRY QUEST","FRACTIONS FORCE","NUMBER SENSE","WORD PROBLEM TRAIL"];
 const questDesc=["Prisms, shapes & surface area","Fractions and equivalent values","Order of operations","Real-world math adventures"];
 const questChar=["chilly","rocky","boffy","zippy"];
-const img=(name,cls="mascot")=>'<img class="'+cls+'" src="assets/'+(name==="boffy"?"boffy-a01.png":name+".svg")+'" onerror="this.onerror=null;this.src=\'assets/boffy.svg\'" alt="'+name+' the sloth">';
+const img=(name,cls="mascot")=>'<img class="'+cls+'" src="assets/'+(name==="boffy"?"boffy-a01.png?v=2b530cac-20261015":name+".svg")+'" onerror="this.onerror=null;this.src=\'assets/boffy.svg\'" alt="'+name+' the sloth">';
 const count=()=>Object.values(entries).filter(e=>e.correct&&e.approved).length;
 const doneFor=c=>Object.values(entries).filter(e=>e.course===c&&e.correct).length;
 const progress=(v,max)=>'<div class="game-progress"><div style="width:'+Math.min(100,100*v/max)+'%"></div></div>';
