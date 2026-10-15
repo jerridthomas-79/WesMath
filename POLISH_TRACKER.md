@@ -8,7 +8,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [ ] A03 — Boffy expressions: happy, thinking, puzzled, cheering, sleepy, encouraging
 - [P] A04 — Boffy idle: breathing and subtle lighting live for approval; blink and articulated wave require additional animation frames
 - [P] A05 — Answer reactions: correct, retry, HELP (published, awaiting iPhone signoff)
-- [ ] A06 — Friends' signature animations
+- [P] A06 — Friends' signature animations (published, pending iPhone signoff)
 
 ## Environment & UI
 - [P] A07 — Detailed layered forest adventure scenery
@@ -135,3 +135,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] A04 breathing/lighting idle effect explicitly approved by user.
 - [P] A05 correct-answer star celebration and Boffy jump, Chilly retry encouragement, animated HELP hint deployed to GitHub Pages via game.css/game.js and cache-busted index.html.
 - [ ] A05 iPhone Safari approval required; no scoring or approval logic modified.
+
+## A05 approved and A06 deployed — 2026-10-15
+- [L] A05 success, retry and HELP effects approved explicitly by user.
+- [P] A06 friend card animations: Boffy breathe, Rocky builder rock, Chilly thinker tilt, Sunny bounce, Zippy wiggle. Published in game.css and game.js, cache-busted index.html.
+- [ ] User verify Friends and Rewards on iPhone. Whole-sprite motion only; no new facial/arm frames.
