@@ -74,3 +74,9 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [x] Cache-busted the script in `index.html`.
 - [ ] **BLOCKED ON BINARY UPLOAD**: GitHub connector available here writes UTF-8 text only; the actual PNG binary is prepared but has not been uploaded to repository. Upload `boffy-a01.png` at exact path `assets/boffy-a01.png` in GitHub to activate it.
 - [ ] User verify actual rendering in Safari; do not mark A01 complete or start A02 yet.
+
+## A01 replacement artwork approval — 2026-10-15
+- [x] User approved the NEW complete cartoon-plush Boffy adventurer artwork (blue fuzzy sloth, cream face, brown eye patches, brown backpack, raised waving paw, complete feet). Reference: latest generated image in conversation, not the previously defective cropped PNG.
+- [ ] Export and visually inspect actual transparent PNG, especially complete face, fingers, feet and background transparency.
+- [ ] Deploy this exact approved image to all live Boffy placements; do not use the older damaged crop.
+- [ ] Verify on iPhone Safari and obtain user confirmation before marking A01 live or proceeding to A02.
