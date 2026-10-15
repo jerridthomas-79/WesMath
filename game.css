@@ -127,3 +127,11 @@ body{background-image:linear-gradient(180deg,#051a31ad,#062c48a3 52%,#04182bd9),
 @keyframes a03-float{50%{transform:translateY(-7px) rotate(2deg)}}
 @media(max-width:390px){.a03-coach .mascot{height:95px;width:86px}.a03-coach .paper-note{font-size:13px;padding:11px}.a03-question{padding:13px}.a03-question-paper{padding:17px}}
 @media(prefers-reduced-motion:reduce){.a03-coach .mascot{animation:none}}
+
+/* A04 — Boffy idle motion, subtle breathing and a welcoming wave.
+   Original approved PNG is unchanged; reduced-motion preferences respected. */
+.hero .mascot{transform-origin:50% 82%;animation:a04-breathe 3.6s ease-in-out infinite,a04-welcome 9s ease-in-out infinite;will-change:transform;filter:drop-shadow(0 10px 8px #002342a0)}
+.goal-board>.mascot{transform-origin:50% 80%;animation:a04-breathe 4s ease-in-out infinite;filter:drop-shadow(0 9px 7px #001a32a0)}
+@keyframes a04-breathe{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-5px) scale(1.025)}}
+@keyframes a04-welcome{0%,72%,100%{filter:drop-shadow(0 10px 8px #002342a0)}76%,84%{filter:drop-shadow(0 10px 8px #002342a0) brightness(1.07)}}
+@media(prefers-reduced-motion:reduce){.hero .mascot,.goal-board>.mascot{animation:none!important;will-change:auto}}
