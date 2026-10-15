@@ -11,7 +11,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [ ] A06 — Friends' signature animations
 
 ## Environment & UI
-- [ ] A07 — Detailed layered forest adventure scenery
+- [P] A07 — Detailed layered forest adventure scenery
 - [ ] A08 — Home composition and hero artwork
 - [ ] A09 — Four illustrated quest cards and progress
 - [ ] A10 — Question parchment, character bubble, HELP overlay
@@ -113,3 +113,9 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] A01: User confirmed blue Boffy on live Safari Friends and Quests screens.
 - [L] A02: User provided live iPhone Safari screenshots of all four approved friend PNGs and four quest cards, stated 'We are good. Continue'. Four friend assets are now live and verified.
 - [P] Next priority A07: detailed layered forest environment; create visual preview before deploying, retaining existing course layout and navigation.
+
+## A07 approved and first live pass — 2026-10-15
+- [x] User approved lush mountain/forest art direction after A02 Safari signoff.
+- [x] Deployed CSS forest atmosphere pass (lighting, panel depth, forest imagery on Home/Friends/Goal) to `game.css` and cache-busted stylesheet in `index.html`.
+- [ ] A07 final high-detail illustrated forest background asset still needs production extraction and deployment; CSS pass is not a replacement for the approved illustration.
+- [ ] Verify live iPhone Safari appearance; do not mark A07 final or delete original `forest.svg` until confirmed.
