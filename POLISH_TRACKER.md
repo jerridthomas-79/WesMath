@@ -7,7 +7,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [L] A02 — Friend masters: Rocky, Chilly, Sunny, Zippy, distinct shapes and accessories
 - [ ] A03 — Boffy expressions: happy, thinking, puzzled, cheering, sleepy, encouraging
 - [P] A04 — Boffy idle: breathing and subtle lighting live for approval; blink and articulated wave require additional animation frames
-- [ ] A05 — Answer reactions: correct, retry, HELP
+- [P] A05 — Answer reactions: correct, retry, HELP (published, awaiting iPhone signoff)
 - [ ] A06 — Friends' signature animations
 
 ## Environment & UI
@@ -130,3 +130,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] A03 quest question, answer and feedback styling: user explicitly approved and requested continuation.
 - [P] A04 gentle breathing on Home and Goal; small light pulse. CSS only, preserves A01 artwork. Reduced-motion users see still image. This is NOT an articulated blink or arm wave; those require new approved sprite frames.
 - [ ] User verify A04 motion on iPhone before closing. Do not mark articulated poses complete.
+
+## A04 approval and A05 deployed — 2026-10-15
+- [L] A04 breathing/lighting idle effect explicitly approved by user.
+- [P] A05 correct-answer star celebration and Boffy jump, Chilly retry encouragement, animated HELP hint deployed to GitHub Pages via game.css/game.js and cache-busted index.html.
+- [ ] A05 iPhone Safari approval required; no scoring or approval logic modified.
