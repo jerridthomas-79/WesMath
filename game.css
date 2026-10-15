@@ -101,3 +101,29 @@ body{background-image:linear-gradient(180deg,#051a31ad,#062c48a3 52%,#04182bd9),
 .a03-feedback .row button{min-height:52px}
 @media(max-width:380px){.a03-question .mascot{width:95px;height:125px}.a03-answer-panel .row button{padding:10px 5px;font-size:14px}}
 @media(prefers-reduced-motion:reduce){.a03-feedback .reaction-mascot{animation:none}}
+
+/* A03 — production question, answer, help and feedback treatment */
+.a03-question{position:relative;overflow:hidden;background:linear-gradient(180deg,#083454d9,#062541ee),url("assets/forest-a07.jpg") center/cover;border-color:#8edaff}
+.a03-quest-header{align-items:center;font-family:Fredoka,sans-serif;font-size:clamp(14px,3.7vw,21px);letter-spacing:.3px}
+.a03-question-paper{position:relative;min-height:175px;background:linear-gradient(145deg,#fffdf1,#f8e8c8 95%);border:4px solid #e9c68a;box-shadow:0 7px 0 #65401c,0 12px 18px #0005;color:#172d48;font:700 clamp(21px,5vw,30px)/1.48 Nunito,sans-serif}
+.a03-question-label{display:block;font:900 13px Fredoka,sans-serif;letter-spacing:1.4px;color:#8a4b21;margin-bottom:15px}
+.a03-coach{display:flex;align-items:center;gap:10px;margin:14px 0}
+.a03-coach .mascot{height:122px;width:112px;object-fit:contain;flex-shrink:0;filter:drop-shadow(0 7px 5px #0008);animation:a03-float 3s ease-in-out infinite}
+.a03-coach .paper-note{flex:1;font-size:15px;font-weight:800;line-height:1.45;box-shadow:0 4px #74532a}
+.a03-answer-panel{background:linear-gradient(165deg,#fffaf0,#e7f0fc)!important;color:#132b48!important;border:3px solid #8bd5ff!important;padding:16px!important}
+.a03-answer-panel label{display:block;font:800 17px Fredoka,sans-serif;margin:0 0 8px}
+.a03-answer-panel input{background:white;border:3px solid #b2d3f3;border-radius:14px;min-height:60px;font-size:22px;font-weight:800;margin:0 0 13px}
+.a03-answer-panel input:focus{outline:3px solid #ffc83c;outline-offset:2px}
+.a03-answer-panel .row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.a03-answer-panel .row button{padding:12px 4px;font-size:clamp(14px,3.8vw,19px)}
+.a03-answer-panel #help{border:2px solid #ffcd62;background:#fff1c6;font-weight:800;line-height:1.5}
+.a03-feedback{min-height:70dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;background:linear-gradient(180deg,#073c62a8,#09223ae6),url("assets/forest-a07.jpg") center/cover}
+.a03-feedback .wood{width:100%;font-size:clamp(29px,8vw,48px);text-align:center}
+.a03-feedback .reaction-mascot{width:min(66vw,260px);height:260px;filter:drop-shadow(0 12px 10px #001a35)}
+.a03-feedback h3{font:800 clamp(22px,5vw,30px) Fredoka,sans-serif;color:#ffdd5e;margin:2px 0}
+.a03-feedback .parchment{font-size:17px!important;width:100%;text-align:left}
+.a03-feedback .row{justify-content:center;width:100%}
+.a03-feedback .row button{flex:1;min-width:130px}
+@keyframes a03-float{50%{transform:translateY(-7px) rotate(2deg)}}
+@media(max-width:390px){.a03-coach .mascot{height:95px;width:86px}.a03-coach .paper-note{font-size:13px;padding:11px}.a03-question{padding:13px}.a03-question-paper{padding:17px}}
+@media(prefers-reduced-motion:reduce){.a03-coach .mascot{animation:none}}
