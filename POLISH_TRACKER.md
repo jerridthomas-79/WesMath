@@ -87,3 +87,10 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [x] Final local file `boffy-a01-approved-transparent.png` ready for one-time upload to GitHub at `assets/boffy-a01.png`.
 - [ ] Actual binary PNG upload still required; repository game.js already targets `assets/boffy-a01.png`.
 - [ ] Verify Safari live image and request final signoff.
+
+## A01 FINAL EXPORT — 2026-10-15
+- [x] Confirmed original newly generated Boffy master is already RGBA with transparency; no background-removal needed.
+- [x] Preserved original full-resolution 1024x1536 artwork and exported exact filename `boffy-a01.png`.
+- [x] Checked complete cream face, eyes, smile, backpack, arms, claws and feet on game-blue background.
+- [ ] USER ACTION: Upload `boffy-a01.png` to repo path `assets/boffy-a01.png` (replace existing file if present). Current game code already references this filename.
+- [ ] Check iPhone Safari live render; mark A01 live only after confirmation.
