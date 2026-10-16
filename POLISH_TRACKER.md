@@ -12,8 +12,8 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 
 ## Environment & UI
 - [P] A07 — Detailed layered forest adventure scenery
-- [P] A08 — Home composition polish deployed; original approved Boffy and forest artwork preserved
-- [ ] A09 — Four illustrated quest cards and progress
+- [L] A08 — Home mobile artwork sizing approved by user; illustrated assets visible and responsive
+- [P] A09 — Four quest card layouts and progress optimized for iPhone; final illustrated card artwork remains pending approval
 - [ ] A10 — Question parchment, character bubble, HELP overlay
 - [ ] A11 — Correct-answer celebration and progress
 - [ ] A12 — Goal meter, reward treasure chest, stats
@@ -150,3 +150,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [x] User confirmed A08 illustrated title, pencil sign and main adventure button artwork preview.
 - [ ] A08 approved PNGs still require upload/deployment; do not mark final art live based on layout-only approval.
 - [ ] A15 MUST redesign the five bottom navigation icons (Home, Quests, Goal, Rewards, Friends), bottom bar treatment, and ALL top header action buttons (Goal Meter, Friends, Dad's Review). No generic emoji or plain gradient buttons in final design. Present illustrated assets for approval before deployment. Preserve working navigation and touch targets.
+
+## A08 mobile signoff and A09 iPhone pass — 2026-10-15
+- [L] User explicitly approved A08 mobile sizing fix for title, wooden sign, and play button.
+- [P] A09 four character-led quest cards, chapter labels and progress; additional 320–430px mobile fit rules published. Awaiting user iPhone visual signoff.
+- [ ] Final A09 custom illustrated card assets are separate from this CSS/layout pass; do not mark art complete.
