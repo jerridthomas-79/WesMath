@@ -315,3 +315,23 @@ footer{display:none}
 .a10-exit-row button{font-size:clamp(12px,3vw,15px);min-height:42px;padding:8px 5px}
 @media(max-height:740px) and (max-width:700px){.a10-question{gap:5px;padding:8px}.a10-question .a03-question-paper{padding:10px 12px}.a10-coach .mascot{height:58px;width:54px}.a10-answer-panel{padding:9px!important}.a10-question .a03-quest-header{min-height:36px}}
 @media(max-width:350px){.a10-coach .paper-note{font-size:11px}.a10-question .a03-question-paper{font-size:18px}}
+
+/* A11 — compact answer celebration and real progress, fixed nav remains visible */
+.a11-feedback{min-height:0;display:flex;flex-direction:column;justify-content:center;gap:7px;padding:12px 13px 16px;margin:0;overflow:hidden}
+.a11-feedback .a11-confetti{font-size:clamp(16px,4.5vw,25px);letter-spacing:clamp(4px,2vw,10px);color:#ffe87e;text-shadow:0 0 12px #ffda58;line-height:1.1}
+.a11-feedback .wood{font-size:clamp(25px,6.5vw,36px);padding:8px;margin:0}
+.a11-feedback .reaction-mascot{height:clamp(95px,20dvh,180px);width:min(52vw,190px);object-fit:contain;margin:0 auto}
+.a11-feedback h3{font-size:clamp(17px,4.6vw,23px);margin:0}
+.a11-quest-status{width:100%;padding:10px 12px;background:#041d36d9;border:2px solid #80cfff;border-radius:15px}
+.a11-status-line{display:flex;justify-content:space-between;align-items:center;gap:8px;font:800 clamp(11px,2.9vw,14px) Nunito,sans-serif;text-align:left}
+.a11-status-line strong{color:#ffe18a}
+.a11-status-line span{white-space:nowrap}
+.a11-quest-status .game-progress{height:13px;margin:8px 0 5px}
+.a11-quest-status p{margin:0;color:#e8f5ff;font:700 clamp(10px,2.7vw,12px) Nunito,sans-serif}
+.a11-message{font-size:clamp(13px,3.4vw,16px)!important;line-height:1.35;padding:10px 12px!important;text-align:left}
+.a11-actions{display:grid!important;grid-template-columns:1.3fr 1fr 0.7fr;gap:7px;width:100%;margin:2px 0 0!important}
+.a11-actions button{min-width:0!important;min-height:45px;font-size:clamp(12px,3vw,15px);padding:8px 4px}
+.a11-retry .a11-confetti{color:#ffe2a1}
+@media(max-height:740px){.a11-feedback{gap:4px;padding:8px}.a11-feedback .reaction-mascot{height:clamp(80px,16dvh,120px)}.a11-quest-status{padding:7px 9px}.a11-message{padding:7px 9px!important}.a11-feedback .wood{padding:6px}}
+@media(max-width:350px){.a11-actions{grid-template-columns:1.4fr 1fr 0.7fr}.a11-actions button{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.a11-confetti{animation:none!important}}
