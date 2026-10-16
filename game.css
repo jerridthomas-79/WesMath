@@ -459,3 +459,35 @@ button:focus-visible,.a16-menu summary:focus-visible{outline:3px solid #ffe17c;o
  .a15-nav-btn:active,.a15-menu-items button:active{transform:none!important}
 }
 @media(prefers-reduced-transparency:reduce){.a15-menu-items,.a11-quest-status{background:#092d4e}}
+
+/* A18 — responsive layout safeguards across Safari, tablet and desktop */
+html{min-height:100%;min-height:100dvh}
+body{min-height:100%;min-height:100dvh}
+main{height:calc(100vh - var(--a16-header) - var(--a16-nav) - env(safe-area-inset-bottom));height:calc(100dvh - var(--a16-header) - var(--a16-nav) - env(safe-area-inset-bottom));min-height:0;scroll-padding-bottom:18px}
+.a16-menu-items{max-height:calc(100dvh - var(--a16-header) - var(--a16-nav) - 18px);overflow-y:auto}
+#app{min-width:0}
+#app .panel,#app .hero{max-width:100%}
+.a14-review-row,.a13-card,.a09-quest{min-width:0}
+@media(min-width:760px){
+ .a16-header{padding-left:max(20px,calc((100vw - 980px)/2));padding-right:max(20px,calc((100vw - 980px)/2))}
+ main{width:min(100%,880px);padding:16px 22px 22px}
+ .a08-home{max-width:750px;margin:0 auto}
+ .a13-collection{grid-template-columns:repeat(4,minmax(0,1fr));gap:13px}
+ .a13-card-art{height:clamp(110px,19dvh,175px)}
+ .a13-rewards-footer{justify-content:center;gap:24px}
+ .a14-review,.a14-settings{max-width:760px;margin:0 auto}
+ .a12-goal{max-width:760px;margin:0 auto}
+}
+@media(orientation:landscape) and (max-height:500px){
+ .a16-header{height:48px;min-height:48px}
+ :root{--a16-header:48px;--a16-nav:53px}
+ .bottom-nav .a15-nav-btn{height:47px}
+ .a15-nav-icon{height:23px;width:25px}
+ .a15-nav-icon svg{height:21px;width:21px}
+ .a08-home{overflow-y:auto;justify-content:flex-start}
+}
+@media(prefers-contrast:more){
+ .bottom-nav .a15-nav-btn.active{border:2px solid #fff0b0}
+ .a15-menu-items button{border-width:2px!important}
+ .a14-review-row,.a13-card{border-color:#d5efff}
+}
