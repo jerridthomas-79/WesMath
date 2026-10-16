@@ -441,3 +441,21 @@ footer{display:none}
 .bottom-nav .a15-nav-btn:focus-visible,.a15-menu-items button:focus-visible{outline:3px solid #ffdf68;outline-offset:1px}
 @media(max-width:350px){.a15-header h1{font-size:16px}.a15-header-star{font-size:18px}.a15-nav-icon{height:27px}.a15-nav-icon svg{width:23px;height:23px}.a15-nav-label{font-size:9px!important}}
 @media(prefers-reduced-motion:reduce){.a15-nav-icon svg,.bottom-nav .a15-nav-btn,.a15-menu summary{transition:none}}
+
+/* A17 — responsive motion, touch responsiveness, and accessible reduced motion */
+main{-webkit-overflow-scrolling:touch;overscroll-behavior-y:contain}
+button,.a16-menu summary{-webkit-tap-highlight-color:transparent;touch-action:manipulation}
+button:focus-visible,.a16-menu summary:focus-visible{outline:3px solid #ffe17c;outline-offset:3px}
+.a15-nav-btn,.a15-menu summary{transition-property:background-color,color,border-color,filter,transform;transition-duration:180ms;transition-timing-function:ease-out}
+.a15-nav-btn:active{transform:translateY(1px)}
+.a15-menu-items button:active{transform:translateY(1px)}
+.a11-win .a11-confetti{animation:a17-sparkle 1.7s ease-in-out 2}
+.a13-unlocked .a13-medal{animation:a17-trophy-pop 600ms ease-out both}
+@keyframes a17-sparkle{0%,100%{opacity:.85;transform:scale(1)}50%{opacity:1;transform:scale(1.08)}}
+@keyframes a17-trophy-pop{0%{opacity:.3;transform:scale(.7) rotate(-8deg)}75%{transform:scale(1.1) rotate(4deg)}100%{opacity:1;transform:scale(1) rotate(0)}}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto!important}
+ *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+ .a15-nav-btn:active,.a15-menu-items button:active{transform:none!important}
+}
+@media(prefers-reduced-transparency:reduce){.a15-menu-items,.a11-quest-status{background:#092d4e}}
