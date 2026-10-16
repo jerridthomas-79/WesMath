@@ -19,11 +19,11 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [L] A12 — Goal Meter layout explicitly approved by user; final illustrated treasure chest artwork remains pending
 - [L] A13 — Rewards layout explicitly approved by user; custom illustrated card assets still pending
 - [L] A14 — Dad Review and Goal Settings layout explicitly approved by user
-- [P] A15 — five custom SVG bottom navigation icons, active backgrounds, header menu SVG actions, button typography and transitions deployed; final hand-illustrated raster assets and iPhone signoff pending
+- [L] A15 — navigation and menu vector icon overhaul explicitly approved by user; hand-illustrated raster assets remain optional outstanding work
 
 ## iPhone & QA
 - [L] A16 — compact header and fixed slim bottom navigation explicitly approved by user; title overlap preview deployed
-- [ ] A17 — Motion, performance, reduced-motion support
+- [P] A17 — restrained reward motion, touch handling, async image decoding, comprehensive reduced-motion CSS deployed; iPhone signoff pending
 - [ ] A18 — iPhone Safari, iPad and desktop QA
 
 ## Approval and release rules
@@ -190,3 +190,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] User explicitly approved A14 Dad Review and Settings layout.
 - [P] A15 custom SVG icons for all five fixed bottom tabs and three header menu actions, compact jewel-button treatments, active states, focus styling, reduced-motion handling deployed.
 - [ ] User to verify active states and header dropdown on iPhone. These are code-drawn vector icons, not separately generated hand-illustrated artwork.
+
+## A15 approval and A17 motion deployment — 2026-10-15
+- [L] User explicitly approved A15 navigation and menu visual overhaul.
+- [P] A17 published: reduced-motion override for animations/transitions, lightweight bounded sparkle and medal motion, touch-action/focus polish, async image decoding and lazy secondary character reactions.
+- [ ] User to verify iPhone normal motion and iOS Accessibility > Motion > Reduce Motion. A18 device QA remains outstanding.
