@@ -15,8 +15,8 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [L] A08 — Home mobile artwork sizing approved by user; illustrated assets visible and responsive
 - [P] A09 — Four quest card layouts and progress optimized for iPhone; final illustrated card artwork remains pending approval
 - [L] A10 — compact iPhone question screen explicitly approved by user
-- [P] A11 — compact correct/retry feedback, quest progress, approved counts and actions deployed; iPhone signoff pending
-- [ ] A12 — Goal meter, reward treasure chest, stats
+- [L] A11 — celebration and progress screens explicitly approved by user
+- [P] A12 — compact Goal Meter, reward text, progress and pending-approval stats deployed; final illustrated treasure chest artwork remains pending
 - [ ] A13 — Original collectible reward cards and locked states
 - [ ] A14 — Dad's Review rows and settings
 - [ ] A15 — COMPLETE visual overhaul: all five bottom navigation icons and backgrounds, ALL top header action buttons, iconography, button artwork, typography and transitions (user explicitly reconfirmed 2026-10-15)
@@ -170,3 +170,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] User explicitly approved A10 compact question layout and requested A11.
 - [P] A11 progress-aware celebration and retry screens published; correct count versus Dad-approved count explicitly separated; animated characters retained; responsive to shorter iPhone viewports.
 - [ ] User to verify correct and incorrect answer paths on iPhone. Keep A09 final illustrated quest-card art outstanding and A15 icon overhaul outstanding.
+
+## A11 approval and A12 Goal Meter deployment — 2026-10-15
+- [L] User approved A11 celebration/progress and requested A12.
+- [P] A12 Goal Meter compact layout published with Boffy, approved/goal/remaining stats, reward, progress and pending correct answers. Parent approval/storage logic untouched.
+- [ ] User iPhone signoff needed. Final illustrated treasure chest is NOT yet created/deployed; retain as separate artwork requirement.
