@@ -14,8 +14,8 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [P] A07 — Detailed layered forest adventure scenery
 - [L] A08 — Home mobile artwork sizing approved by user; illustrated assets visible and responsive
 - [P] A09 — Four quest card layouts and progress optimized for iPhone; final illustrated card artwork remains pending approval
-- [P] A10 — compact iPhone question parchment, Boffy coach, HELP and answer controls deployed; signoff pending
-- [ ] A11 — Correct-answer celebration and progress
+- [L] A10 — compact iPhone question screen explicitly approved by user
+- [P] A11 — compact correct/retry feedback, quest progress, approved counts and actions deployed; iPhone signoff pending
 - [ ] A12 — Goal meter, reward treasure chest, stats
 - [ ] A13 — Original collectible reward cards and locked states
 - [ ] A14 — Dad's Review rows and settings
@@ -165,3 +165,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] User explicitly approved A16 compact iPhone shell with fixed bottom navigation and requested continued polishing.
 - [P] A10 compact question screen published: reduced padding, legible parchment, smaller Boffy coach, answer input and action controls. No scoring, question generation, or storage logic changed.
 - [ ] Check a real question on iPhone, including HELP and keyboard. Long math prompts may scroll within main; bottom navigation remains fixed.
+
+## A10 approval and A11 celebration deployment — 2026-10-15
+- [L] User explicitly approved A10 compact question layout and requested A11.
+- [P] A11 progress-aware celebration and retry screens published; correct count versus Dad-approved count explicitly separated; animated characters retained; responsive to shorter iPhone viewports.
+- [ ] User to verify correct and incorrect answer paths on iPhone. Keep A09 final illustrated quest-card art outstanding and A15 icon overhaul outstanding.
