@@ -14,7 +14,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [P] A07 — Detailed layered forest adventure scenery
 - [L] A08 — Home mobile artwork sizing approved by user; illustrated assets visible and responsive
 - [P] A09 — Four quest card layouts and progress optimized for iPhone; final illustrated card artwork remains pending approval
-- [ ] A10 — Question parchment, character bubble, HELP overlay
+- [P] A10 — compact iPhone question parchment, Boffy coach, HELP and answer controls deployed; signoff pending
 - [ ] A11 — Correct-answer celebration and progress
 - [ ] A12 — Goal meter, reward treasure chest, stats
 - [ ] A13 — Original collectible reward cards and locked states
@@ -22,7 +22,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [ ] A15 — COMPLETE visual overhaul: all five bottom navigation icons and backgrounds, ALL top header action buttons, iconography, button artwork, typography and transitions (user explicitly reconfirmed 2026-10-15)
 
 ## iPhone & QA
-- [P] A16 — compact menu header, persistent slim bottom navigation, viewport-fit Home, internal scrolling for longer screens; iPhone signoff pending
+- [L] A16 — compact header and fixed slim bottom navigation explicitly approved by user; title overlap preview deployed
 - [ ] A17 — Motion, performance, reduced-motion support
 - [ ] A18 — iPhone Safari, iPad and desktop QA
 
@@ -160,3 +160,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [x] User approved A08 mobile graphic sizing and requested no page scrolling on Home, persistent shorter bottom nav, and compact top menu.
 - [P] Header replaced with Menu (Goal Meter, Friends, Dad's Review); nav fixed at ~61px plus safe area; Home uses dynamic viewport fit and scales mascot/title/sign/button; footer removed from viewport.
 - [ ] iPhone screenshot signoff required. Long content screens intentionally scroll within main content rather than clipping math/parent controls. Keyboard and multiple iPhone sizes still need QA.
+
+## A16 approval and A10 question-fit preview — 2026-10-15
+- [L] User explicitly approved A16 compact iPhone shell with fixed bottom navigation and requested continued polishing.
+- [P] A10 compact question screen published: reduced padding, legible parchment, smaller Boffy coach, answer input and action controls. No scoring, question generation, or storage logic changed.
+- [ ] Check a real question on iPhone, including HELP and keyboard. Long math prompts may scroll within main; bottom navigation remains fixed.
