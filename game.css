@@ -389,3 +389,33 @@ footer{display:none}
 .a13-rewards-footer button{font-size:clamp(11px,3vw,14px);padding:7px 8px;min-height:42px;white-space:nowrap}
 @media(max-height:750px){.a13-rewards{gap:6px;padding:8px}.a13-card{padding:5px}.a13-card-art{height:clamp(65px,13dvh,98px)}.a13-card-reward{margin:1px 0 4px}.a13-collection{gap:7px}.a13-rewards-header h2{font-size:22px}}
 @media(max-width:350px){.a13-card-top{font-size:8px}.a13-card-top span:last-child{font-size:8px}.a13-rewards-footer span{font-size:10px}}
+
+/* A14 — Dad's Review and Settings; short-screen-first, safe inner scrolling */
+.a14-review,.a14-settings{margin:0;padding:12px;display:flex;flex-direction:column;gap:9px;min-height:0}
+.a14-review-head,.a14-settings-head{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.a14-review-head h2,.a14-settings-head h2{font-size:clamp(22px,5.7vw,32px);margin:0}
+.a14-review-head button,.a14-settings-head button{padding:8px 10px;min-height:40px;font-size:13px;white-space:nowrap}
+.a14-review-note,.a14-settings-note{margin:0;color:#d4e9ff;font:700 clamp(11px,2.9vw,13px)/1.35 Nunito,sans-serif}
+.a14-summary{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px}
+.a14-summary>div{display:flex;flex-direction:column;align-items:center;padding:8px 3px;background:#0a3b64;border:1px solid #7bc9ff;border-radius:12px}
+.a14-summary strong{font:800 clamp(23px,6vw,33px) Fredoka,sans-serif;color:#ffe17e}
+.a14-summary span{font:900 clamp(9px,2.5vw,11px) Nunito,sans-serif;letter-spacing:.5px}
+.a14-section-title{margin:2px 0 0;font-size:17px;color:#ffdc7d}
+.a14-review-list{display:grid;gap:7px}
+.a14-review-row{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:9px;background:#0a3458;border:1px solid #5a9fd1;border-radius:12px}
+.a14-review-copy{min-width:0;display:flex;flex-direction:column;gap:2px;text-align:left}
+.a14-review-copy strong{font-size:clamp(12px,3.3vw,15px);overflow-wrap:anywhere}
+.a14-review-copy span{font-size:12px;color:#e4f0ff;overflow-wrap:anywhere}
+.a14-review-row button{min-height:41px;flex-shrink:0;padding:8px 10px;font-size:13px}
+.a14-status{font-size:12px;font-weight:900;color:#ffdf89;white-space:nowrap}
+.a14-empty{background:#0b3c62;border:1px solid #6cb4dd;border-radius:12px;padding:14px;text-align:center;font-size:13px}
+.a14-history{border:1px solid #679ec5;border-radius:12px;background:#092b4b;padding:0 9px 9px}
+.a14-history summary{padding:11px 4px;cursor:pointer;font:800 13px Nunito,sans-serif;color:#e9f4ff}
+.a14-history .a14-review-row{padding:7px}
+.a14-goal-link{width:100%;min-height:42px;font-size:14px}
+.a14-fields{display:grid;gap:4px}
+.a14-fields label{font:800 13px Nunito,sans-serif;color:#ffe5a4}
+.a14-fields input{min-height:45px;margin:0 0 7px!important;padding:8px 11px;font-size:17px}
+.a14-settings-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+.a14-settings-actions button{min-height:45px;font-size:15px;padding:8px}
+@media(max-height:740px){.a14-review,.a14-settings{gap:6px;padding:9px}.a14-summary>div{padding:5px 3px}.a14-review-row{padding:7px}.a14-fields input{min-height:42px;margin-bottom:4px!important}}
