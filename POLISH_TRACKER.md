@@ -18,8 +18,8 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [L] A11 — celebration and progress screens explicitly approved by user
 - [L] A12 — Goal Meter layout explicitly approved by user; final illustrated treasure chest artwork remains pending
 - [L] A13 — Rewards layout explicitly approved by user; custom illustrated card assets still pending
-- [P] A14 — pending-first Dad Review, expandable history, compact goal settings deployed; iPhone signoff pending
-- [ ] A15 — COMPLETE visual overhaul: all five bottom navigation icons and backgrounds, ALL top header action buttons, iconography, button artwork, typography and transitions (user explicitly reconfirmed 2026-10-15)
+- [L] A14 — Dad Review and Goal Settings layout explicitly approved by user
+- [P] A15 — five custom SVG bottom navigation icons, active backgrounds, header menu SVG actions, button typography and transitions deployed; final hand-illustrated raster assets and iPhone signoff pending
 
 ## iPhone & QA
 - [L] A16 — compact header and fixed slim bottom navigation explicitly approved by user; title overlap preview deployed
@@ -185,3 +185,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] User explicitly approved A13 Rewards layout.
 - [P] A14 pending-first review, compact status counters, collapsible approved/retry history, and goal settings deployed. Existing approve/save functions retained; no parent authentication added.
 - [ ] User to verify Dad Review and Settings on iPhone. A15 five-icon and menu-button complete visual overhaul remains outstanding.
+
+## A14 approval and A15 navigation deployment — 2026-10-15
+- [L] User explicitly approved A14 Dad Review and Settings layout.
+- [P] A15 custom SVG icons for all five fixed bottom tabs and three header menu actions, compact jewel-button treatments, active states, focus styling, reduced-motion handling deployed.
+- [ ] User to verify active states and header dropdown on iPhone. These are code-drawn vector icons, not separately generated hand-illustrated artwork.
