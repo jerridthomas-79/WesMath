@@ -19,7 +19,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [ ] A12 — Goal meter, reward treasure chest, stats
 - [ ] A13 — Original collectible reward cards and locked states
 - [ ] A14 — Dad's Review rows and settings
-- [ ] A15 — Navigation, iconography, buttons, typography, transitions
+- [ ] A15 — COMPLETE visual overhaul: all five bottom navigation icons and backgrounds, ALL top header action buttons, iconography, button artwork, typography and transitions (user explicitly reconfirmed 2026-10-15)
 
 ## iPhone & QA
 - [ ] A16 — Safe-area header, bottom navigation, keyboard and scroll clearance
@@ -145,3 +145,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] A06 five distinct friend idle motions explicitly approved by user.
 - [P] A08 Home: richer hero hierarchy, improved title, paper reminder, large CTA, and real Dad-approved counter. Preserves existing assets and localStorage.
 - [ ] A08 user iPhone Safari signoff required before next item A09.
+
+## Visual overhaul requirement — 2026-10-15
+- [x] User confirmed A08 illustrated title, pencil sign and main adventure button artwork preview.
+- [ ] A08 approved PNGs still require upload/deployment; do not mark final art live based on layout-only approval.
+- [ ] A15 MUST redesign the five bottom navigation icons (Home, Quests, Goal, Rewards, Friends), bottom bar treatment, and ALL top header action buttons (Goal Meter, Friends, Dad's Review). No generic emoji or plain gradient buttons in final design. Present illustrated assets for approval before deployment. Preserve working navigation and touch targets.
