@@ -9,7 +9,15 @@ const count=()=>Object.values(entries).filter(e=>e.correct&&e.approved).length;
 const doneFor=c=>Object.values(entries).filter(e=>e.course===c&&e.correct).length;
 const progress=(v,max)=>'<div class="game-progress"><div style="width:'+Math.min(100,100*v/max)+'%"></div></div>';
 const friendCards=()=>chars.map(x=>'<div class="friend a06-friend a06-'+x[0]+'">'+img(x[0])+'<h3>'+x[1]+'</h3><p>'+x[2]+'</p></div>').join("");
-function navbar(){const items=[["welcome","🏠","Home"],["courses","📖","Quests"],["goals","🏆","Goal"],["rewards","🎁","Rewards"],["friends","🦥","Friends"]];document.getElementById("boffy-nav").innerHTML=items.map(x=>'<button class="'+(page===x[0]?'active':'')+'" onclick="page=\''+x[0]+'\';render()"><span>'+x[1]+'</span>'+x[2]+'</button>').join("")}
+const navIcons={
+welcome:'<path d="M3 11.5 12 4l9 7.5V21h-7v-6h-4v6H3z"/><path d="m2 12 10-9 10 9"/>',
+courses:'<path d="M12 6c-3-2-6-2-9-1v14c3-1 6-1 9 1 3-2 6-2 9-1V5c-3-1-6-1-9 1z"/><path d="M12 6v14"/><path d="M5 9c2-.4 3-.3 5 .5M14 9c2-.8 3-.9 5-.5"/>',
+goals:'<path d="M7 4h10v5c0 4-2 7-5 7S7 13 7 9z"/><path d="M7 6H4v3c0 3 2 4 5 4M17 6h3v3c0 3-2 4-5 4M12 16v4M8 21h8"/><path d="m12 7 .8 1.6 1.8.3-1.3 1.3.3 1.8-1.6-.8-1.6.8.3-1.8-1.3-1.3 1.8-.3z"/>',
+rewards:'<rect x="3" y="9" width="18" height="12" rx="2"/><path d="M2 9h20M12 9v12M12 9c-4 0-7-2-7-4 0-3 5-4 7 4zM12 9c4 0 7-2 7-4 0-3-5-4-7 4z"/>',
+friends:'<circle cx="8" cy="8" r="2"/><circle cx="16" cy="8" r="2"/><path d="M5 19v-3c0-2 1-4 3-4s3 2 3 4v3zM13 19v-3c0-2 1-4 3-4s3 2 3 4v3zM10 21h4"/>'
+};
+function navbar(){const items=[["welcome","Home"],["courses","Quests"],["goals","Goal"],["rewards","Rewards"],["friends","Friends"]];document.getElementById("boffy-nav").innerHTML=items.map(x=>'<button type="button" class="a15-nav-btn '+(page===x[0]?'active':'')+'" aria-label="'+x[1]+'" '+(page===x[0]?'aria-current="page"':'')+' onclick="page=\''+x[0]+'\';render()"><span class="a15-nav-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+navIcons[x[0]]+'</svg></span><span class="a15-nav-label">'+x[1]+'</span></button>').join("")}
+
 window.rewards=function(){page="rewards";render()};
 window.render=function(){
 const approved=count(),submitted=Object.values(entries).length,left=Math.max(0,goal.target-approved),pct=Math.min(100,Math.round(approved/goal.target*100));
