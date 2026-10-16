@@ -295,3 +295,23 @@ footer{display:none}
 .a08-title{margin-top:-5dvh}
 .a08-title-art{max-height:23dvh}
 }
+
+/* A10 — compact, readable question screen inside A16 persistent navigation shell */
+.a10-question{display:flex;flex-direction:column;gap:8px;margin:0;padding:12px 13px 14px;min-height:0}
+.a10-question .a03-quest-header{margin:0;min-height:42px;padding:8px 10px;align-items:center;gap:8px;font-size:clamp(13px,3.4vw,19px)}
+.a10-question .a03-quest-header strong:last-child{white-space:nowrap}
+.a10-question>div:nth-child(2){margin:0!important}
+.a10-question .game-progress{height:10px}
+.a10-question .a03-question-paper{min-height:0;padding:14px 16px;font-size:clamp(19px,4.7vw,27px);line-height:1.35}
+.a10-question .a03-question-label{margin-bottom:6px;font-size:11px}
+.a10-coach{margin:0;gap:8px}
+.a10-coach .mascot{width:70px;height:77px;animation:none}
+.a10-coach .paper-note{padding:9px 11px;font-size:clamp(12px,3vw,14px);line-height:1.3}
+.a10-answer-panel{padding:12px!important;margin:0!important}
+.a10-answer-panel label{font-size:15px;margin-bottom:3px}
+.a10-answer-panel input{min-height:48px;padding:9px 12px;margin:0 0 9px;font-size:20px}
+.a10-answer-panel .row button{min-height:46px;font-size:16px}
+.a10-exit-row{margin:2px 0 0!important;display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.a10-exit-row button{font-size:clamp(12px,3vw,15px);min-height:42px;padding:8px 5px}
+@media(max-height:740px) and (max-width:700px){.a10-question{gap:5px;padding:8px}.a10-question .a03-question-paper{padding:10px 12px}.a10-coach .mascot{height:58px;width:54px}.a10-answer-panel{padding:9px!important}.a10-question .a03-quest-header{min-height:36px}}
+@media(max-width:350px){.a10-coach .paper-note{font-size:11px}.a10-question .a03-question-paper{font-size:18px}}
