@@ -419,3 +419,25 @@ footer{display:none}
 .a14-settings-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px}
 .a14-settings-actions button{min-height:45px;font-size:15px;padding:8px}
 @media(max-height:740px){.a14-review,.a14-settings{gap:6px;padding:9px}.a14-summary>div{padding:5px 3px}.a14-review-row{padding:7px}.a14-fields input{min-height:42px;margin-bottom:4px!important}}
+
+/* A15 — custom vector navigation and illustrated jewel-button styling; A16 shell unchanged */
+.a15-header{background:linear-gradient(100deg,#061d3b,#0b416a 58%,#071c36);border-bottom:2px solid #72cfff;box-shadow:0 3px 12px #0008}
+.a15-header h1{font-family:Fredoka,sans-serif;font-weight:700;letter-spacing:.1px;color:#fff0bd;text-shadow:0 2px 0 #0a3059,0 0 10px #fbc14b42}
+.a15-header-star{color:#ffdd68;font-size:23px;text-shadow:0 0 10px #ffdf73}
+.a15-menu summary{border:2px solid #b7e8ff;border-radius:12px;background:linear-gradient(#2a85b7,#14537f 60%,#0a385d);box-shadow:inset 0 1px #ffffff55,0 3px 0 #032440;color:#fff5cd;font:900 13px Nunito,sans-serif;min-height:40px;padding:7px 10px;transition:filter .18s,transform .18s}
+.a15-menu summary svg{height:19px;width:19px;stroke:#fff1b4}
+.a15-menu[open] summary{filter:brightness(1.2);transform:translateY(1px)}
+.a15-menu-items{border:2px solid #9ee0ff;background:linear-gradient(160deg,#0d4269,#082440);box-shadow:0 12px 28px #000c;padding:10px;gap:8px}
+.a15-menu-items button{display:flex;align-items:center;gap:10px;min-height:45px!important;border:1px solid #86caff!important;background:linear-gradient(#235c88,#0d365d)!important;color:#fff!important;border-radius:11px!important;box-shadow:inset 0 1px #ffffff33,0 3px 0 #031d36!important;font:800 14px Nunito,sans-serif!important;text-align:left}
+.a15-menu-items button svg{height:22px;width:22px;flex-shrink:0;stroke:#ffe48c}
+.a15-menu-items button:active{transform:translateY(2px)}
+.bottom-nav{background:linear-gradient(180deg,#0a3558 0%,#061b35 65%,#04172b);border-top:2px solid #75cfff;box-shadow:0 -4px 20px #0009}
+.bottom-nav .a15-nav-btn{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:1px;height:55px;min-height:0;border:1px solid transparent;border-radius:11px;background:transparent;box-shadow:none;color:#c5e3fa;padding:2px 1px;font:900 10px Nunito,sans-serif;transition:background .18s,color .18s,transform .18s}
+.bottom-nav .a15-nav-btn.active{color:#fff0b0;background:linear-gradient(180deg,#226f9f,#13456d 70%,#0a3156);border-color:#8ddcff;box-shadow:inset 0 1px #ffffff66,0 0 10px #7fcfff38}
+.a15-nav-icon{display:flex!important;align-items:center;justify-content:center;width:29px;height:29px;font-size:initial!important;line-height:1!important}
+.a15-nav-icon svg{display:block;width:26px;height:26px;stroke:currentColor;filter:drop-shadow(0 1px 1px #001a36);transition:transform .18s}
+.a15-nav-btn.active .a15-nav-icon svg{transform:translateY(-1px) scale(1.07);filter:drop-shadow(0 0 4px #ffe89d88)}
+.a15-nav-label{display:block!important;font-size:10px!important;line-height:1.1!important}
+.bottom-nav .a15-nav-btn:focus-visible,.a15-menu-items button:focus-visible{outline:3px solid #ffdf68;outline-offset:1px}
+@media(max-width:350px){.a15-header h1{font-size:16px}.a15-header-star{font-size:18px}.a15-nav-icon{height:27px}.a15-nav-icon svg{width:23px;height:23px}.a15-nav-label{font-size:9px!important}}
+@media(prefers-reduced-motion:reduce){.a15-nav-icon svg,.bottom-nav .a15-nav-btn,.a15-menu summary{transition:none}}
