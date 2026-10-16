@@ -279,3 +279,19 @@ footer{display:none}
 @media(max-height:750px){.a08-home .a08-mascot .mascot{height:min(17dvh,125px)}.a08-title-art{max-height:24dvh}.a08-sign-art{max-height:14dvh}.a08-button-art{max-height:10dvh}.a08-home{gap:0}}
 @media(max-width:350px){.a16-menu summary span{display:none}.a16-header h1{font-size:17px}.bottom-nav button{font-size:9px}.bottom-nav button span{font-size:18px}}
 @media(min-width:760px){main{height:calc(100dvh - var(--a16-header) - var(--a16-nav));}.a08-home .a08-mascot .mascot{height:min(24dvh,210px)}}
+
+/* A16b — illustrated title overlaps Boffy's lower body to reclaim mobile height */
+@media(max-width:700px){
+.a08-home{justify-content:center;gap:clamp(2px,0.6dvh,7px)}
+.a08-mascot{position:relative;z-index:1;margin:0}
+.a08-home .a08-mascot .mascot{height:min(25dvh,200px);max-width:64vw}
+.a08-title{position:relative;z-index:2;margin-top:clamp(-60px,-7dvh,-30px);pointer-events:none}
+.a08-title-art{max-height:min(27dvh,220px);max-width:90%;filter:drop-shadow(0 5px 5px #001b36a8)}
+.a08-pencil,.a08-play,.a08-home-footer{position:relative;z-index:3}
+.a08-home .a08-play{pointer-events:auto}
+}
+@media(max-height:700px) and (max-width:700px){
+.a08-home .a08-mascot .mascot{height:22dvh}
+.a08-title{margin-top:-5dvh}
+.a08-title-art{max-height:23dvh}
+}
