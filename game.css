@@ -335,3 +335,27 @@ footer{display:none}
 @media(max-height:740px){.a11-feedback{gap:4px;padding:8px}.a11-feedback .reaction-mascot{height:clamp(80px,16dvh,120px)}.a11-quest-status{padding:7px 9px}.a11-message{padding:7px 9px!important}.a11-feedback .wood{padding:6px}}
 @media(max-width:350px){.a11-actions{grid-template-columns:1.4fr 1fr 0.7fr}.a11-actions button{font-size:11px}}
 @media(prefers-reduced-motion:reduce){.a11-confetti{animation:none!important}}
+
+/* A12 — viewport-aware Goal Meter with real approval status */
+.a12-goal{display:flex;flex-direction:column;gap:9px;min-height:0;margin:0;padding:14px;overflow:hidden}
+.a12-heading{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.a12-heading h2{font-size:clamp(24px,6vw,34px);margin:0}
+.a12-goal-badge{flex-shrink:0;background:#063b60d9;border:2px solid #9be5ff;border-radius:50px;padding:6px 10px;font:900 clamp(12px,3.3vw,16px) Fredoka,sans-serif;color:#ffe17a}
+.a12-hero{display:flex;align-items:center;gap:12px;min-width:0}
+.a12-hero>.mascot{width:clamp(90px,28vw,150px);height:clamp(105px,21dvh,180px);object-fit:contain;flex-shrink:0;margin:0;filter:drop-shadow(0 6px 8px #00162f)}
+.a12-goal-info{flex:1;min-width:0;text-align:left}
+.a12-label{display:block;font:900 10px Nunito,sans-serif;letter-spacing:1.3px;color:#ffe39b;margin-bottom:4px}
+.a12-goal-info .wood{font-size:clamp(16px,4vw,23px);padding:8px 10px;margin:0 0 8px;overflow-wrap:anywhere}
+.a12-goal-info .goal-reward{font:800 clamp(16px,4.2vw,24px) Fredoka,sans-serif;color:#ffe57b;overflow-wrap:anywhere;line-height:1.2}
+.a12-stats{margin:0!important;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:5px;padding:8px 3px!important}
+.a12-stats>div{min-width:0}
+.a12-stats .big-number{font-size:clamp(24px,6.5vw,39px);line-height:1.05}
+.a12-stats small{font-size:clamp(9px,2.6vw,12px);letter-spacing:.4px}
+.a12-progress-label{display:flex;justify-content:space-between;align-items:center;gap:8px;font:800 13px Nunito,sans-serif;color:#f7f9ff}
+.a12-progress-label span{color:#ffdc73}
+.a12-goal>.game-progress{height:17px;margin:0;border:2px solid #a1d8ff;border-radius:20px}
+.a12-encouragement{padding:10px 12px;font:800 clamp(12px,3.3vw,15px)/1.35 Nunito,sans-serif;text-align:center;margin:0}
+.a12-pending{font:700 clamp(11px,2.9vw,13px)/1.35 Nunito,sans-serif;color:#e7f3ff;margin:0;text-align:center}
+.a12-review{min-height:44px;width:100%;font-size:clamp(13px,3.5vw,17px);padding:8px}
+@media(max-height:740px){.a12-goal{gap:5px;padding:9px}.a12-hero>.mascot{height:clamp(78px,16dvh,120px);width:clamp(80px,24vw,110px)}.a12-goal-info .wood{padding:6px 8px;margin-bottom:5px}.a12-stats{padding:5px 2px!important}.a12-encouragement{padding:6px 9px}.a12-review{min-height:40px}}
+@media(max-width:350px){.a12-hero{gap:7px}.a12-heading h2{font-size:22px}.a12-goal-badge{font-size:11px}}
