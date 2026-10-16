@@ -23,8 +23,8 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 
 ## iPhone & QA
 - [L] A16 — compact header and fixed slim bottom navigation explicitly approved by user; title overlap preview deployed
-- [P] A17 — restrained reward motion, touch handling, async image decoding, comprehensive reduced-motion CSS deployed; iPhone signoff pending
-- [ ] A18 — iPhone Safari, iPad and desktop QA
+- [L] A17 — motion, performance and reduced-motion polish explicitly approved by user
+- [P] A18 — responsive viewport, menu overflow, landscape and wide-screen CSS safeguards deployed; physical device/browser QA outstanding
 
 ## Approval and release rules
 1. Show user a visual preview of one asset or tightly coupled set.
@@ -195,3 +195,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] User explicitly approved A15 navigation and menu visual overhaul.
 - [P] A17 published: reduced-motion override for animations/transitions, lightweight bounded sparkle and medal motion, touch-action/focus polish, async image decoding and lazy secondary character reactions.
 - [ ] User to verify iPhone normal motion and iOS Accessibility > Motion > Reduce Motion. A18 device QA remains outstanding.
+
+## A17 approval and A18 cross-device pass — 2026-10-15
+- [L] User explicitly approved A17 motion/performance/reduced-motion polish.
+- [P] A18 static/source-level responsive pass deployed: 100vh fallback + 100dvh, scrollable dropdown on short screens, iPad/desktop four-column rewards, landscape header/nav sizing, higher contrast.
+- [ ] Actual Safari iPhone, iPad and desktop browser manual functional verification has NOT been performed. User to verify fixed navigation, no horizontal overflow, quest answer submission, feedback, Dad approval, rewards and Reduce Motion.
