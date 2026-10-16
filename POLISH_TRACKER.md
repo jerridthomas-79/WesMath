@@ -22,7 +22,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [ ] A15 — COMPLETE visual overhaul: all five bottom navigation icons and backgrounds, ALL top header action buttons, iconography, button artwork, typography and transitions (user explicitly reconfirmed 2026-10-15)
 
 ## iPhone & QA
-- [ ] A16 — Safe-area header, bottom navigation, keyboard and scroll clearance
+- [P] A16 — compact menu header, persistent slim bottom navigation, viewport-fit Home, internal scrolling for longer screens; iPhone signoff pending
 - [ ] A17 — Motion, performance, reduced-motion support
 - [ ] A18 — iPhone Safari, iPad and desktop QA
 
@@ -155,3 +155,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] User explicitly approved A08 mobile sizing fix for title, wooden sign, and play button.
 - [P] A09 four character-led quest cards, chapter labels and progress; additional 320–430px mobile fit rules published. Awaiting user iPhone visual signoff.
 - [ ] Final A09 custom illustrated card assets are separate from this CSS/layout pass; do not mark art complete.
+
+## A16 viewport-first layout — 2026-10-15
+- [x] User approved A08 mobile graphic sizing and requested no page scrolling on Home, persistent shorter bottom nav, and compact top menu.
+- [P] Header replaced with Menu (Goal Meter, Friends, Dad's Review); nav fixed at ~61px plus safe area; Home uses dynamic viewport fit and scales mascot/title/sign/button; footer removed from viewport.
+- [ ] iPhone screenshot signoff required. Long content screens intentionally scroll within main content rather than clipping math/parent controls. Keyboard and multiple iPhone sizes still need QA.
