@@ -17,8 +17,8 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 - [L] A10 — compact iPhone question screen explicitly approved by user
 - [L] A11 — celebration and progress screens explicitly approved by user
 - [L] A12 — Goal Meter layout explicitly approved by user; final illustrated treasure chest artwork remains pending
-- [P] A13 — compact four-card collectible milestone grid, locked/unlocked status and progress deployed; custom illustrated card assets still pending
-- [ ] A14 — Dad's Review rows and settings
+- [L] A13 — Rewards layout explicitly approved by user; custom illustrated card assets still pending
+- [P] A14 — pending-first Dad Review, expandable history, compact goal settings deployed; iPhone signoff pending
 - [ ] A15 — COMPLETE visual overhaul: all five bottom navigation icons and backgrounds, ALL top header action buttons, iconography, button artwork, typography and transitions (user explicitly reconfirmed 2026-10-15)
 
 ## iPhone & QA
@@ -180,3 +180,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] User explicitly approved A12 Goal Meter layout.
 - [P] A13 compact 2×2 collectible milestone card grid published using approved character art, status badges, progress and real Dad-approved counts. Rewards link to Friends rather than duplicating full crew grid on this page.
 - [ ] A13 iPhone signoff needed. Distinct illustrated collectible card backgrounds are not yet created; this is a layout/styling pass.
+
+## A13 approval and A14 Dad Review deployment — 2026-10-15
+- [L] User explicitly approved A13 Rewards layout.
+- [P] A14 pending-first review, compact status counters, collapsible approved/retry history, and goal settings deployed. Existing approve/save functions retained; no parent authentication added.
+- [ ] User to verify Dad Review and Settings on iPhone. A15 five-icon and menu-button complete visual overhaul remains outstanding.
