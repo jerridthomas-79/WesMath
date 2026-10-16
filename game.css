@@ -235,3 +235,13 @@ body{background-image:linear-gradient(180deg,#051a31ad,#062c48a3 52%,#04182bd9),
 .a08-home .a08-title .slogan{max-width:100%;font-size:clamp(9px,2.4vw,13px)}
 @media(max-width:430px){.a08-home{padding-left:12px;padding-right:12px}.a08-title-art{max-height:245px}.a08-sign-art{max-height:155px}.a08-button-art{max-height:105px}.a08-home .a08-mascot .mascot{height:clamp(155px,26vh,245px)}}
 @media(max-width:350px){.a08-title-art{max-height:215px}.a08-sign-art{max-height:130px}.a08-button-art{max-height:92px}}
+
+/* A09 iPhone fit pass — preserve each portrait and readable progress at 320–430px */
+.a09-quest{width:100%;max-width:100%;min-width:0;box-sizing:border-box}
+.a09-quest .quest-copy{min-width:0;overflow-wrap:break-word}
+.a09-quest .quest-copy strong{max-width:100%;overflow-wrap:break-word}
+.a09-quest .a09-character{max-width:30%;min-width:0}
+.a09-quest .a09-character img{max-width:100%;height:auto;max-height:123px;object-fit:contain}
+.a09-quest .quest-arrow{margin-left:auto}
+@media(max-width:430px){.a09-quest{min-height:126px;gap:7px;padding:10px 8px 10px 5px}.a09-quest .a09-character{width:clamp(72px,22vw,92px);height:110px}.a09-quest .a09-character img{max-height:110px}.a09-quest .quest-copy strong{font-size:clamp(17px,4.6vw,21px)}.a09-quest .quest-copy small{font-size:11px}.a09-quest .quest-arrow{font-size:16px}}
+@media(max-width:350px){.a09-quest .a09-character{width:67px}.a09-quest .quest-copy strong{font-size:16px}.a09-quest-kicker{font-size:10px}.a09-quest .quest-arrow{font-size:14px}}
