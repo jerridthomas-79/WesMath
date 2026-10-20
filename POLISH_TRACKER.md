@@ -13,7 +13,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 ## Environment & UI
 - [P] A07 — Detailed layered forest adventure scenery
 - [L] A08 — Home mobile artwork sizing approved by user; illustrated assets visible and responsive
-- [P] A09 — Four quest card layouts and progress optimized for iPhone; final illustrated card artwork remains pending approval
+- [P] A09 — approved quest layouts now have distinct final math-motif artwork preview deployed; awaiting user artwork signoff
 - [L] A10 — compact iPhone question screen explicitly approved by user
 - [L] A11 — celebration and progress screens explicitly approved by user
 - [L] A12 — Goal Meter layout explicitly approved by user; final illustrated treasure chest artwork remains pending
@@ -24,7 +24,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 ## iPhone & QA
 - [L] A16 — compact header and fixed slim bottom navigation explicitly approved by user; title overlap preview deployed
 - [L] A17 — motion, performance and reduced-motion polish explicitly approved by user
-- [P] A18 — responsive viewport, menu overflow, landscape and wide-screen CSS safeguards deployed; physical device/browser QA outstanding
+- [L] A18 — responsive pass approved by user on iPhone; iPad/desktop physical-device verification remains outstanding
 
 ## Approval and release rules
 1. Show user a visual preview of one asset or tightly coupled set.
@@ -200,3 +200,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] User explicitly approved A17 motion/performance/reduced-motion polish.
 - [P] A18 static/source-level responsive pass deployed: 100vh fallback + 100dvh, scrollable dropdown on short screens, iPad/desktop four-column rewards, landscape header/nav sizing, higher contrast.
 - [ ] Actual Safari iPhone, iPad and desktop browser manual functional verification has NOT been performed. User to verify fixed navigation, no horizontal overflow, quest answer submission, feedback, Dad approval, rewards and Reduce Motion.
+
+## Resume — final artwork pass — 2026-10-20
+- [L] User confirmed A18 looks good on iPhone.
+- [P] Final artwork item 1 deployed: four quest cards now carry distinct geometry, fraction, number and story-math motif layers while preserving approved sloth character art and layout.
+- [ ] Next after approval: illustrated Goal Meter treasure chest, then collectible reward-card backgrounds.
