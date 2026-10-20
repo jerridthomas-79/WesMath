@@ -491,3 +491,21 @@ main{height:calc(100vh - var(--a16-header) - var(--a16-nav) - env(safe-area-inse
  .a15-menu-items button{border-width:2px!important}
  .a14-review-row,.a13-card{border-color:#d5efff}
 }
+
+/* Final artwork 1 — illustrated quest-card motifs layered behind approved characters */
+.a19-quest-card{isolation:isolate;overflow:hidden}
+.a19-quest-card>*{position:relative;z-index:2}
+.a19-art{position:absolute!important;z-index:0!important;inset:0;pointer-events:none;overflow:hidden;opacity:.9}
+.a19-art:before{content:"";position:absolute;width:150px;height:150px;border:2px solid #fff4;border-radius:50%;right:-48px;top:-55px;box-shadow:0 0 0 14px #fff1,0 0 0 28px #fff1}
+.a19-art:after{content:"";position:absolute;left:88px;right:22px;bottom:11px;height:2px;background:linear-gradient(90deg,transparent,#fff5,transparent);transform:rotate(-5deg)}
+.a19-symbol{position:absolute;font:800 clamp(28px,8vw,48px) Fredoka,sans-serif;color:#fff2b5;text-shadow:0 3px 0 #0003;opacity:.34}
+.a19-symbol-one{right:34px;top:8px;transform:rotate(9deg)}
+.a19-symbol-two{right:9px;bottom:5px;transform:rotate(-12deg)}
+.a19-art-label{position:absolute;right:8px;top:48%;font:900 9px Nunito,sans-serif;letter-spacing:1.5px;color:#fff;opacity:.22;transform:rotate(-90deg) translateY(-50%);transform-origin:right center}
+.a19-quest-0 .a19-art{background:radial-gradient(circle at 88% 25%,#72d8ff55,transparent 29%),linear-gradient(115deg,transparent 48%,#ffd98b18)}
+.a19-quest-1 .a19-art{background:radial-gradient(circle at 86% 25%,#e9ff9850,transparent 29%),linear-gradient(115deg,transparent 48%,#fff4ae16)}
+.a19-quest-2 .a19-art{background:radial-gradient(circle at 86% 25%,#e2b7ff55,transparent 29%),linear-gradient(115deg,transparent 48%,#ffe9ae16)}
+.a19-quest-3 .a19-art{background:radial-gradient(circle at 86% 25%,#9ce7ff55,transparent 29%),linear-gradient(115deg,transparent 48%,#fff3aa16)}
+.a19-quest-card .a09-character,.a19-quest-card .quest-copy,.a19-quest-card .quest-arrow{z-index:2}
+@media(max-width:380px){.a19-symbol{font-size:30px}.a19-art-label{display:none}}
+@media(prefers-reduced-motion:reduce){.a19-quest-card{transition:none!important}}
