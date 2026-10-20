@@ -535,3 +535,9 @@ main{height:calc(100vh - var(--a16-header) - var(--a16-nav) - env(safe-area-inse
 .a21-tier-3{background:radial-gradient(circle at 50% 38%,#f3c7ff88,transparent 36%),linear-gradient(165deg,#9a5c78,#432657)}.a21-tier-3 .a21-ribbon{background:#74418d;border-color:#edc8ff}
 .a13-locked .a21-rays,.a13-locked .a21-stars{opacity:.12}
 @media(prefers-reduced-motion:no-preference){.a13-unlocked .a21-stars{animation:a17-sparkle 2.1s ease-in-out 2}}
+
+/* Final signoff polish - stable release */
+img{max-width:100%}
+.a19-quest-card,.a20-reward,.a21-card-art{contain:layout paint}
+.a13-card,.a14-review-row,.quest-card{overflow-wrap:anywhere}
+@media(max-width:390px){.a13-card{padding:7px}.a13-collection{gap:7px}.a19-quest-card{margin:9px 0}}
