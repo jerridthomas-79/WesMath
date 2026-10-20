@@ -522,3 +522,16 @@ main{height:calc(100vh - var(--a16-header) - var(--a16-nav) - env(safe-area-inse
 .a20-reward-copy{min-width:0;font-weight:900;line-height:1.2;text-align:left;overflow-wrap:anywhere}
 @media(max-width:360px){.a20-chest{transform:scale(.88);transform-origin:left center;flex-basis:61px}.a20-reward{gap:5px}}
 @media(prefers-reduced-motion:no-preference){.a20-glow{animation:a17-sparkle 1.9s ease-in-out 2}}
+
+/* Final artwork 3 - collectible reward-card backgrounds */
+.a21-card-art{isolation:isolate;border-radius:11px;margin:4px 0 5px;border:1px solid #ffffff3b;overflow:hidden;background:radial-gradient(circle at 50% 38%,#8fdcff66,transparent 36%),linear-gradient(165deg,#174d72,#071e3b)}
+.a21-card-art:before{content:"";position:absolute;inset:6px;border:1px solid #ffffff30;border-radius:8px;z-index:0}
+.a21-rays{position:absolute;z-index:0;width:180px;height:180px;left:50%;top:46%;transform:translate(-50%,-50%);opacity:.28;background:repeating-conic-gradient(from 0deg,#fff 0 4deg,transparent 4deg 20deg);border-radius:50%}
+.a21-stars{position:absolute;z-index:1;top:5px;left:8px;color:#fff3b0;font-size:12px;letter-spacing:4px;opacity:.75}
+.a21-card-art img{position:relative;z-index:2}.a21-card-art .a13-medal{z-index:4}
+.a21-ribbon{position:absolute;z-index:3;left:-28px;bottom:8px;width:105px;padding:2px 0;background:#8d5428;border:1px solid #f2c168;color:#fff5c5;font:900 8px Nunito,sans-serif;letter-spacing:1px;transform:rotate(38deg)}
+.a21-tier-1{background:radial-gradient(circle at 50% 38%,#e5f6ff77,transparent 36%),linear-gradient(165deg,#517997,#173550)}.a21-tier-1 .a21-ribbon{background:#778b9b;border-color:#e8f5ff}
+.a21-tier-2{background:radial-gradient(circle at 50% 38%,#fff1a788,transparent 36%),linear-gradient(165deg,#765ca0,#272852)}.a21-tier-2 .a21-ribbon{background:#a57417;border-color:#ffe68b}
+.a21-tier-3{background:radial-gradient(circle at 50% 38%,#f3c7ff88,transparent 36%),linear-gradient(165deg,#9a5c78,#432657)}.a21-tier-3 .a21-ribbon{background:#74418d;border-color:#edc8ff}
+.a13-locked .a21-rays,.a13-locked .a21-stars{opacity:.12}
+@media(prefers-reduced-motion:no-preference){.a13-unlocked .a21-stars{animation:a17-sparkle 2.1s ease-in-out 2}}
