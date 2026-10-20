@@ -208,5 +208,9 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 
 ## Final artwork item 1 approval / item 2 preview — 2026-10-20
 - [L] User approved final quest-card artwork.
-- [P] Final artwork item 2 deployed: compact illustrated gold-and-wood treasure chest integrated into Goal Meter reward panel; awaiting user signoff.
+- [P] Final artwork item 2 treasure chest approved by user.
 - [ ] Next after approval: collectible reward-card backgrounds.
+
+## Final artwork item 3 preview - 2026-10-20
+- [L] Goal Meter treasure chest approved.
+- [P] Collectible Bronze, Silver, Gold and Legend reward-card backgrounds deployed with tier ribbons, rays and sparkle details; awaiting user signoff.
