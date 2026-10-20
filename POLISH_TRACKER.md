@@ -213,4 +213,10 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 
 ## Final artwork item 3 preview - 2026-10-20
 - [L] Goal Meter treasure chest approved.
-- [P] Collectible Bronze, Silver, Gold and Legend reward-card backgrounds deployed with tier ribbons, rays and sparkle details; awaiting user signoff.
+- [L] Collectible Bronze, Silver, Gold and Legend reward-card artwork explicitly approved by user.
+
+## Final release signoff - 2026-10-20
+- [L] User approved final collectible reward-card artwork.
+- [L] Final artwork set complete: quest cards, Goal Meter treasure chest, collectible reward cards.
+- [L] Final compact-screen safeguards deployed and stable release cache version published.
+- [L] Boffy Math Quest production-polish sequence complete based on user approvals, including A18 iPhone verification.
