@@ -509,3 +509,16 @@ main{height:calc(100vh - var(--a16-header) - var(--a16-nav) - env(safe-area-inse
 .a19-quest-card .a09-character,.a19-quest-card .quest-copy,.a19-quest-card .quest-arrow{z-index:2}
 @media(max-width:380px){.a19-symbol{font-size:30px}.a19-art-label{display:none}}
 @media(prefers-reduced-motion:reduce){.a19-quest-card{transition:none!important}}
+
+/* Final artwork 2 — Goal Meter treasure chest */
+.a20-reward{display:flex!important;align-items:center;gap:10px;min-height:62px;padding:7px 10px!important;overflow:hidden;position:relative}
+.a20-chest{position:relative;display:block;flex:0 0 70px;width:70px;height:49px;filter:drop-shadow(0 5px 3px #001a35aa)}
+.a20-chest-lid{position:absolute;left:7px;top:4px;width:56px;height:22px;border:3px solid #5c3215;border-radius:24px 24px 5px 5px;background:linear-gradient(#ffd15d 0 22%,#b96828 23% 67%,#8b431d 68%);box-shadow:inset 0 3px #ffe99a}
+.a20-chest-body{position:absolute;left:5px;top:22px;width:60px;height:26px;border:3px solid #542b13;border-radius:4px 4px 9px 9px;background:linear-gradient(90deg,#9b4d1e,#d27a30 45%,#a75320);box-shadow:inset 0 5px #ef9d45}
+.a20-chest-body:before,.a20-chest-body:after{content:"";position:absolute;top:-3px;bottom:-3px;width:6px;background:#f2bc43;border:1px solid #7a4a17}
+.a20-chest-body:before{left:8px}.a20-chest-body:after{right:8px}
+.a20-chest-body i{position:absolute;z-index:2;left:23px;top:4px;width:10px;height:12px;border-radius:3px;background:#ffe57a;border:2px solid #79501b}
+.a20-glow{position:absolute;right:-2px;top:-4px;color:#fff1a4;font-size:20px;text-shadow:0 0 8px #fff}
+.a20-reward-copy{min-width:0;font-weight:900;line-height:1.2;text-align:left;overflow-wrap:anywhere}
+@media(max-width:360px){.a20-chest{transform:scale(.88);transform-origin:left center;flex-basis:61px}.a20-reward{gap:5px}}
+@media(prefers-reduced-motion:no-preference){.a20-glow{animation:a17-sparkle 1.9s ease-in-out 2}}
