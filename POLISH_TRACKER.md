@@ -13,7 +13,7 @@ Status: [ ] Not started · [P] Preview ready · [A] Approved · [L] Live and ver
 ## Environment & UI
 - [P] A07 — Detailed layered forest adventure scenery
 - [L] A08 — Home mobile artwork sizing approved by user; illustrated assets visible and responsive
-- [P] A09 — approved quest layouts now have distinct final math-motif artwork preview deployed; awaiting user artwork signoff
+- [L] A09 — final quest-card math-motif artwork explicitly approved by user
 - [L] A10 — compact iPhone question screen explicitly approved by user
 - [L] A11 — celebration and progress screens explicitly approved by user
 - [L] A12 — Goal Meter layout explicitly approved by user; final illustrated treasure chest artwork remains pending
@@ -205,3 +205,8 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] User confirmed A18 looks good on iPhone.
 - [P] Final artwork item 1 deployed: four quest cards now carry distinct geometry, fraction, number and story-math motif layers while preserving approved sloth character art and layout.
 - [ ] Next after approval: illustrated Goal Meter treasure chest, then collectible reward-card backgrounds.
+
+## Final artwork item 1 approval / item 2 preview — 2026-10-20
+- [L] User approved final quest-card artwork.
+- [P] Final artwork item 2 deployed: compact illustrated gold-and-wood treasure chest integrated into Goal Meter reward panel; awaiting user signoff.
+- [ ] Next after approval: collectible reward-card backgrounds.
