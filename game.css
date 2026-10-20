@@ -420,6 +420,24 @@ footer{display:none}
 .a14-settings-actions button{min-height:45px;font-size:15px;padding:8px}
 @media(max-height:740px){.a14-review,.a14-settings{gap:6px;padding:9px}.a14-summary>div{padding:5px 3px}.a14-review-row{padding:7px}.a14-fields input{min-height:42px;margin-bottom:4px!important}}
 
+/* Live release — passcode convenience gate and confirmed progress reset */
+.a22-unlock{max-width:520px!important;margin:clamp(18px,8vh,70px) auto!important;text-align:center;padding:clamp(20px,5vw,34px)!important}
+.a22-lock{font-size:48px;line-height:1;margin-bottom:4px}
+.a22-unlock h2{margin:4px 0 8px}
+.a22-unlock form{text-align:left;margin-top:18px}
+.a22-unlock label{display:block;font-weight:900;margin-bottom:6px}
+#dad-passcode{display:block;width:100%;min-height:54px;margin:0 0 10px;padding:10px 14px;border:3px solid #87c6ff;border-radius:12px;background:#fff;color:#13294b;font:900 25px/1 Nunito,sans-serif;letter-spacing:.35em;text-align:center}
+#dad-passcode:focus{outline:3px solid #ffdb45;outline-offset:2px}
+.a22-error{margin:6px 0 12px;padding:9px 11px;border-radius:10px;background:#661f2a;color:#fff;font-weight:900}
+.a22-unlock-actions{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.a22-security-note{margin:18px 0 0;color:#bdd7ef;font-size:12px;line-height:1.4}
+.a22-reset{margin-top:8px;padding:12px;border:2px solid #e27070;border-radius:14px;background:#431827}
+.a22-reset h3{margin:0 0 5px;color:#ffd4d4;font-size:18px}
+.a22-reset p{margin:0 0 10px;color:#ffe8e8;font-size:12px;line-height:1.4}
+button.a22-danger{width:100%;min-height:45px;background:linear-gradient(#d95050,#a81f2b);border-color:#ffaaaa;box-shadow:0 4px 0 #5c1019;color:#fff}
+button.a22-danger:active{box-shadow:0 2px 0 #5c1019}
+@media(max-height:740px){.a22-reset{padding:8px}.a22-reset p{margin-bottom:7px}.a22-unlock{margin:8px auto!important}}
+
 /* A15 — custom vector navigation and illustrated jewel-button styling; A16 shell unchanged */
 .a15-header{background:linear-gradient(100deg,#061d3b,#0b416a 58%,#071c36);border-bottom:2px solid #72cfff;box-shadow:0 3px 12px #0008}
 .a15-header h1{font-family:Fredoka,sans-serif;font-weight:700;letter-spacing:.1px;color:#fff0bd;text-shadow:0 2px 0 #0a3059,0 0 10px #fbc14b42}

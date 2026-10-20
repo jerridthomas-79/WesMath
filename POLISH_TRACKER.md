@@ -220,3 +220,10 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] Final artwork set complete: quest cards, Goal Meter treasure chest, collectible reward cards.
 - [L] Final compact-screen safeguards deployed and stable release cache version published.
 - [L] Boffy Math Quest production-polish sequence complete based on user approvals, including A18 iPhone verification.
+
+## Live release access and progress controls - 2026-10-20
+- [L] Dad Review & Settings now requires passcode `7979` once per page session; this is explicitly a client-side convenience gate, not strong security.
+- [L] Goal Settings includes a clearly labeled, confirmed Reset All Progress action.
+- [L] Reset clears the persisted `entries` collection, including Wesley’s answers, submissions, Dad approvals, and all derived milestone/reward progress, while preserving the configured `goal` name, target, and reward.
+- [L] Removed all pre-release wording and messaging from production source.
+- [L] Preserved approved artwork, navigation, responsive layout, motion, and reduced-motion behavior; published with live-release cache versions.
