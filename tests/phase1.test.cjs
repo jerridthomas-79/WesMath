@@ -8,14 +8,16 @@ function boot(saved,random=Math.random){
  const elements={}; let data=saved?JSON.stringify(saved):null;
  const context={console,Math:Object.assign(Object.create(Math),{random}),Date,Set,Number,Object,String,JSON,
   localStorage:{getItem:()=>data,setItem:(k,v)=>{data=v}},
-  document:{getElementById:id=>elements[id]||(elements[id]={innerHTML:'',value:'',style:{},focus(){},classList:{remove(){},add(){}}})},
+  document:{getElementById:id=>elements[id]||(elements[id]={innerHTML:'',value:'',style:{},focus(){},classList:{remove(){},add(){},toggle(){}}})},
   alert:()=>{},confirm:()=>true,requestAnimationFrame:f=>f()};
  for(const id of ["answer","dad-passcode","help"])context.document.getElementById(id);
  context.window=context;vm.createContext(context);
  vm.runInContext(fs.readFileSync('questions.js','utf8'),context);
- vm.runInContext(inline,context);vm.runInContext(fs.readFileSync('game.js','utf8'),context);
+ vm.runInContext(inline,context);vm.runInContext(fs.readFileSync('game.js','utf8'),context);vm.runInContext(fs.readFileSync('achievements.js','utf8'),context);
  return {run:s=>vm.runInContext(s,context),elements,snapshot:()=>JSON.parse(data),context};
 }
+module.exports={boot};
+if(require.main===module){
 test('4,000 distinct questions, stable IDs and finite answers',()=>{
  const b=boot();const banks=b.context.BoffyQuestions.banks;
  assert.equal(new Set(banks.flat().map(p=>p.q)).size,4000);
@@ -80,3 +82,5 @@ test('invalid input, corrupted storage, navigation and help remain functional',(
  b.run('showHelp()');assert.match(b.elements.help.textContent,/Boffy/);
  b.context.localStorage.setItem=()=>{throw new Error('quota')};b.elements.answer.value=String(b.run('problem(course,n).ans'));b.run('record()');assert.equal(b.run('page'),'feedback');assert.equal(b.run('storageWarning'),true);
 });
+
+}

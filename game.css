@@ -559,3 +559,47 @@ img{max-width:100%}
 .a19-quest-card,.a20-reward,.a21-card-art{contain:layout paint}
 .a13-card,.a14-review-row,.quest-card{overflow-wrap:anywhere}
 @media(max-width:390px){.a13-card{padding:7px}.a13-collection{gap:7px}.a19-quest-card{margin:9px 0}}
+
+
+/* Phase 2: celebration functionality/layout using existing approved assets. */
+main.celebration-page{padding-top:7px;padding-bottom:9px;padding-left:max(10px,env(safe-area-inset-left));padding-right:max(10px,env(safe-area-inset-right));overflow:hidden}
+.achievement-screen{height:100%;min-height:0;margin:0;display:flex;flex-direction:column;align-items:stretch;gap:7px;text-align:center;padding:12px;border-color:#edca74;background:linear-gradient(#072c49dd,#041b35ee),url('assets/forest-a07.jpg') center/cover}
+.achievement-heading h2{font-size:clamp(23px,6.2vw,38px);line-height:1.05;margin:0;color:#ffdc69;text-wrap:balance}
+.achievement-heading p{font-size:clamp(12px,3.6vw,17px);line-height:1.25;margin:6px 0 0}
+.achievement-hero-art{position:relative;flex:1 1 210px;min-height:55px;max-height:330px;isolation:isolate}
+.achievement-hero-art img{position:absolute;bottom:0;width:23%;height:87%;object-fit:contain;object-position:bottom;filter:drop-shadow(0 4px 5px #0008)}
+.achievement-hero-art .achievement-crew-rocky{left:0;height:74%}.achievement-hero-art .achievement-crew-chilly{left:18%}.achievement-hero-art .achievement-crew-boffy{left:36%;width:28%;height:100%;z-index:2}.achievement-hero-art .achievement-crew-sunny{right:18%}.achievement-hero-art .achievement-crew-zippy{right:0;height:74%}
+.achievement-details{flex-shrink:0;max-height:150px;overflow-y:auto;overflow-wrap:anywhere}
+.achievement-details h3{font-size:clamp(19px,5vw,27px);line-height:1.1;margin:0 0 5px;color:#ffdc69}
+.achievement-details p{font-size:clamp(13px,3.6vw,18px);line-height:1.3;margin:0 0 5px;font-weight:800}
+.achievement-details small{display:block;font-size:11px;line-height:1.25;color:#e3edfa}
+.achievement-shout{flex-shrink:0;display:block;font-family:Fredoka,system-ui,sans-serif;font-size:clamp(16px,4.5vw,22px);line-height:1.15;padding:8px!important;margin:0;color:#ffe58a}
+.achievement-actions{flex-shrink:0;display:grid;gap:7px}
+.achievement-actions button{min-height:44px;margin:0;padding:9px 5px;font-size:clamp(14px,3.8vw,18px);line-height:1.15}
+.achievement-actions button:disabled{opacity:.65;cursor:wait}
+.achievement-save-info{flex-shrink:0;font-size:11px;line-height:1.2;color:#e3edfa}
+.achievement-save-info p{margin:2px 0}.achievement-save-info a{display:inline-block;color:#ffe58a;padding:8px;text-decoration:underline;min-height:32px}
+.achievement-revisit{text-align:center;padding:12px 0}.achievement-revisit button{min-height:44px;font-size:16px}
+.achievement-history-item{display:flex;width:100%;flex-direction:column;gap:5px;text-align:left;margin:14px 0;padding:14px;min-height:60px;overflow-wrap:anywhere}
+.achievement-history-item strong{color:#ffdc69}.achievement-history-item span{font-size:15px}
+body:has(.celebration-page) .a16-header{height:calc(var(--a16-header) + env(safe-area-inset-top));padding-top:calc(6px + env(safe-area-inset-top))}
+main.celebration-page{height:calc(100vh - var(--a16-header) - var(--a16-nav) - env(safe-area-inset-top) - env(safe-area-inset-bottom));height:calc(100dvh - var(--a16-header) - var(--a16-nav) - env(safe-area-inset-top) - env(safe-area-inset-bottom))}
+@media(max-height:680px) and (orientation:portrait){.achievement-screen{padding:8px;gap:5px}.achievement-details{max-height:107px}.achievement-heading h2{font-size:23px}.achievement-heading p{margin-top:3px}.achievement-details h3{font-size:19px;margin-bottom:3px}.achievement-details p{font-size:13px;margin-bottom:3px}.achievement-shout{font-size:16px;padding:6px!important}.achievement-save-info{font-size:10px}}
+@media(orientation:landscape) and (max-height:550px){
+ .achievement-screen{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);grid-template-rows:auto auto auto auto;gap:5px 14px;padding:8px}
+ .achievement-heading{grid-column:1;grid-row:1}.achievement-heading h2{font-size:23px}.achievement-heading p{font-size:12px;margin-top:3px}
+ .achievement-hero-art{grid-column:1;grid-row:2/5;max-height:none;min-height:40px}
+ .achievement-details{grid-column:2;grid-row:1;max-height:85px}.achievement-details h3{font-size:19px}.achievement-details p{font-size:13px}.achievement-details small{font-size:10px}
+ .achievement-shout{grid-column:2;grid-row:2;font-size:15px;padding:5px!important;align-self:center}
+ .achievement-actions{grid-column:2;grid-row:3;grid-template-columns:1fr 1fr;align-self:center;gap:7px}.achievement-actions button{font-size:12px;padding:5px;min-height:44px}
+ .achievement-save-info{grid-column:2;grid-row:4;font-size:10px}.achievement-save-info a{padding:4px;min-height:24px}
+}
+.achievement-save-info:has(#achievement-file-links:not([hidden]))>p:not([role]){display:none}
+@media(max-height:680px) and (orientation:portrait){.achievement-screen{gap:4px}.achievement-hero-art{min-height:40px}.achievement-details{max-height:85px}.achievement-save-info a{padding:5px 8px;min-height:26px}}
+@media(orientation:landscape) and (max-height:360px){
+ .achievement-screen{grid-template-rows:minmax(0,1fr) auto auto auto;gap:4px 8px;padding:6px}
+ .achievement-heading h2{font-size:18px}.achievement-heading p{font-size:10px;line-height:1.2}
+ .achievement-details{min-height:0;height:100%;max-height:100%}.achievement-details h3{font-size:16px;margin-bottom:3px}.achievement-details p{font-size:12px;margin-bottom:3px}
+ .achievement-shout{font-size:13px;line-height:1.1;padding:4px!important}
+ .achievement-save-info{font-size:9px}.achievement-save-info a{padding:3px 6px;min-height:22px}
+}

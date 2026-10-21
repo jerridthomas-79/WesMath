@@ -227,3 +227,34 @@ A01 master Boffy → A02 friends → A07 scenery → A08 home → A09 quests →
 - [L] Reset clears the persisted `entries` collection, including Wesley’s answers, submissions, Dad approvals, and all derived milestone/reward progress, while preserving the configured `goal` name, target, and reward.
 - [L] Removed all pre-release wording and messaging from production source.
 - [L] Preserved approved artwork, navigation, responsive layout, motion, and reduced-motion behavior; published with live-release cache versions.
+
+
+## Phase 1 — Question banks and local progress — approved 2026-10-21
+- [x] Deployed commit `943d93b`: four banks of 1,000 unique sixth-grade questions, randomized selection, no repeats after correct completion, local progress, and /1000 quest counters.
+- [x] User approved Phase 1. Existing approved artwork, Dad passcode `7979`, confirmed reset, goals, rewards, and navigation retained.
+
+## Phase 2 — Congratulations screen — implementation complete, deployed for approval
+- [x] Goal achievement: celebrate immediately when a new Dad approval crosses the currently configured target. Each numeric target is a distinct milestone; subsequent approvals, duplicate approval calls, goal name/reward edits, and reverting to a reached target do not celebrate again.
+- [x] Changing settings to an already-reached target records it for revisiting without an automatic celebration. Existing Phase 1 completed quests/goals are likewise available to revisit without a surprise on upgrade/reload. Increasing the target above current progress allows a new milestone to be earned.
+- [x] Quest completion: celebrate immediately upon the final correct answer in any of the four 1,000-question quests, independently of Dad approval.
+- [x] Personalized headline, crew message, achievement/reward description, and exact callout `SHOW DAD HOW AWESOME YOU ARE`.
+- [x] Dedicated `data-art-slot="phase3-group-illustration"` composes the five existing approved PNG masters. No new artwork was generated, and no master image was altered.
+- [x] SAVE MY ACHIEVEMENT prepares a 1600×2000 PNG with required text and all five characters. A ready PNG File is shared directly from the button tap where file sharing is supported. Cancellation stays on screen; unsupported/failed sharing provides download and open-image links. The website does not silently take hardware screenshots or automatically save to Photos.
+- [x] RETURN HOME uses the existing Home screen. Goal/Rewards include View My Achievements for revisiting and exporting saved milestones without awarding additional credit.
+- [x] Milestone snapshots persist additively in `pm-progress` schema version 2 alongside unchanged entries/goal/activeQuestion fields. Reset All Progress clears milestones and prepared export state while keeping goal settings.
+- [x] Functional viewport layout includes iPhone portrait/landscape, safe-area-aware spacing, 44px actions, fixed bottom-navigation clearance, and internally scrollable unusually long custom goal text.
+- [x] Regression tests cover all 4,000 questions through completion plus Phase 1 storage, retries, Dad Review, passcode, approvals, goal retention, and reset.
+- [x] Phase 2 tests cover goal crossing, settings changes, all four quests, independent milestone IDs, idempotence, history/reload/reset, real PNG export, simulated native sharing with a File during user activation, cancellation/error/download fallback, Return Home, image-load retry, and long custom text. Mobile browser checks cover eight viewport sizes from 320×568 portrait to 568×320 landscape and desktop/tablet.
+- [ ] User approval of deployed Phase 2. Actual iPhone native share-sheet/Save Image behavior requires physical-device confirmation; browser tests simulate the share API.
+
+## Remaining Phase 3 — Final group illustration (not started)
+- [ ] Create and obtain approval for one final group celebration illustration using the approved crew identities.
+- [ ] Replace the dedicated hero-art slot and PNG export composition with the approved final group illustration; preserve Phase 2 behavior.
+- [ ] Deploy and verify on Safari after approval. Do not alter individual character masters.
+
+## Remaining Phase 4 — Final visual polish (not started)
+- [ ] Perform the separately approved final visual-polish pass after Phase 3 artwork approval.
+- [ ] Recheck typography, spacing, final-art scaling, responsive fit, accessibility/reduced motion, and exported PNG legibility on the intended devices.
+- [ ] Final Safari/iPhone visual and native-sharing signoff. Preserve milestone, gameplay, approval, reward, and reset behavior.
+
+STOP: Phase 3 and Phase 4 are not authorized by the Phase 2 delivery. Await user approval before Phase 3.

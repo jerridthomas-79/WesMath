@@ -14,7 +14,7 @@ with sync_playwright() as p:
     page.on('pageerror',lambda error:errors.append(str(error)))
     page.route('https://fonts.googleapis.com/**',lambda route:route.abort())
     page.goto(f'http://127.0.0.1:{server.server_port}/index.html')
-    page.get_by_role('button',name='▶ LET’S DO MATH!').click()
+    page.locator('.a08-play').click()
     assert page.locator('.quest-card').count()==4
     assert page.locator('.a09-count').all_text_contents()==['0 / 1000 completed']*4
     page.locator('.quest-card').first.click()

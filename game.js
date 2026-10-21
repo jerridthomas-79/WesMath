@@ -34,9 +34,18 @@ window.cancelDadUnlock=function(){page="goals";render()};
 window.resetAllProgress=function(){
 if(!dadUnlocked){page="dadUnlock";render();return}
 if(!confirm("Reset all Wesley progress? This permanently removes every saved answer, submission, Dad approval, milestone, and earned reward on this device. Goal settings will be kept.")){return}
-entries={};activeQuestion=null;n=0;hint=0;ready=false;started=Date.now();photo=null;save();
+entries={};window.BoffyAchievements?.reset();activeQuestion=null;n=0;hint=0;ready=false;started=Date.now();photo=null;save();
 alert("All Wesley progress has been reset. Goal settings were kept.");
 page="setGoal";render()
+};
+// Approval stays inside the existing Dad session gate. Re-approving is a no-op.
+window.approve=function(k){
+ if(!dadUnlocked){review();return}
+ const entry=entries[k];
+ if(!entry||!entry.correct){alert("Only correct answers earn credit.");return}
+ if(entry.approved)return;
+ const before=count();entry.approved=true;
+ window.BoffyAchievements?.onApproval(before,count());save();render()
 };
 window.render=function(){
 const approved=count(),submitted=Object.values(entries).length,left=Math.max(0,goal.target-approved),pct=Math.min(100,Math.round(approved/goal.target*100));
