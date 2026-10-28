@@ -96,9 +96,11 @@ function record(){
  const p=problem(course,n),field=document.getElementById("answer"),v=field.value.trim();
  if(!v||!Number.isFinite(Number(v))){alert("Enter a finite numerical answer first. Keep your handwritten steps on paper for Dad.");return}
  entries[course+"-"+n]={course,n,answer:v,correct:Math.abs(Number(v)-p.ans)<1e-9,approved:false};
- page="feedback";window.BoffyAchievements?.onCorrect(course);save();render()
+ const correct=entries[course+"-"+n].correct;
+ page="feedback";window.BoffyAchievements?.onCorrect(course);save();render();
+ if(correct)window.BoffyCoins?.play()
 }
 function next(){selectQuestion(course);render()}
 function quit(){page="quit";render()}function review(){page="review";render()}function approve(k){if(!entries[k].correct){alert("Only correct answers earn credit.");return}entries[k].approved=true;save();render()}function render(){}
-</script><nav id="boffy-nav" class="bottom-nav" aria-label="Main navigation"></nav><script src="game.js?v=phase2-20261021"></script><script src="achievements.js?v=phase2-20261021"></script><script src="boffy-hero.js?v=2"></script></body></html>
+</script><nav id="boffy-nav" class="bottom-nav" aria-label="Main navigation"></nav><script src="game.js?v=phase2-20261021"></script><script src="achievements.js?v=phase2-20261021"></script><script src="boffy-hero.js?v=2"></script><script src="boffy-coins.js?v=1"></script></body></html>
 
