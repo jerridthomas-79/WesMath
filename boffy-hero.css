@@ -1,0 +1,21 @@
+/* Boffy's enchanted welcome. No fonts, images, or runtime dependencies. */
+.a08-home .boffy-touch{position:relative;display:block;padding:0;margin:0;border:0;background:none;box-shadow:none;border-radius:45%;line-height:0;touch-action:manipulation;-webkit-tap-highlight-color:transparent;isolation:isolate}
+.a08-home .boffy-touch:hover,.a08-home .boffy-touch:active{filter:none;transform:none;box-shadow:none}
+.boffy-touch:focus-visible{outline:3px solid #ffe58c;outline-offset:6px}
+.boffy-touch::before{content:"";position:absolute;inset:5% -24% -5%;z-index:-1;border-radius:50%;background:radial-gradient(ellipse,#ffdf7a70 0%,#c3eeff26 42%,transparent 70%);animation:boffy-aura 5s ease-in-out infinite;pointer-events:none}
+.boffy-burst{position:absolute;left:50%;top:45%;font:700 19px/1 system-ui;color:#ffe49b;text-shadow:0 0 9px #ffb62f;pointer-events:none;animation:boffy-burst .9s ease-out both;animation-delay:var(--delay)}
+.a08-home .a08-sparkles.boffy-greeting{height:20px;font:800 clamp(10px,2.8vw,13px)/20px Nunito,system-ui,sans-serif;letter-spacing:.3px;color:#fff4cd;text-shadow:0 1px 5px #00233d;white-space:nowrap}
+@keyframes boffy-aura{0%,100%{opacity:.5;transform:scale(.93)}50%{opacity:1;transform:scale(1.08)}}
+@keyframes boffy-burst{0%{opacity:0;transform:translate(-50%,-50%) scale(.25)}15%{opacity:1}100%{opacity:0;transform:translate(calc(-50% + var(--dx)),calc(-50% + var(--dy))) rotate(var(--spin)) scale(.6)}}
+/* Articulated action frames replace the whole-image floating treatment. */
+.a08-home .boffy-touch .mascot{animation:none!important;transform:none;will-change:auto}
+.boffy-touch::before{animation:none;opacity:.8}
+.boffy-action{display:none;width:auto;height:22dvh;max-height:210px;max-width:64vw;aspect-ratio:1;object-fit:contain;filter:drop-shadow(0 7px 5px #00234255)}
+.has-action .boffy-action{display:block}
+.a08-home .has-action .mascot{display:none}
+.a08-home .a08-sparkles.boffy-greeting{font-weight:900;color:#fff0a0;letter-spacing:1px}
+.boffy-touch.is-cheering::before{animation:boffy-aura .7s ease-in-out 3}
+@media(max-width:700px){.boffy-action{height:min(25dvh,200px)}}
+@media(max-height:700px) and (max-width:700px){.boffy-action{height:22dvh}}
+@media(prefers-reduced-motion:reduce){.boffy-touch.is-cheering::before{animation:none}}
+@media(prefers-reduced-motion:reduce){.boffy-touch::before,.boffy-burst{animation:none!important}.boffy-burst{display:none}}
